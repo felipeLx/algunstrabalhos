@@ -1,0 +1,8 @@
+pyspark
+pyyaml
+pandas
+pytest
+numpy
+scikit-learn
+datetime
+```

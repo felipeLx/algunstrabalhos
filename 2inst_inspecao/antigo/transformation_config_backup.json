@@ -1,0 +1,27 @@
+{
+    "transf": [
+        {
+            "schema_name": "temp2inst",
+            "table_name": "ejud_dim_processo",
+            "columns": [
+                "cod_documento",
+                "cod_cnj",
+                "cod_cnj_sigilo",
+                "id_sigilo",
+                "cod_classe_interna",
+                "cod_classe_externa",
+                "cod_classe_cnj",
+                "nm_classe",
+                "ind_originario",
+                "ind_prioridade_idoso",
+                "ind_prioridade_idoso_80",
+                "ind_doenca_grave",
+                "ind_prioridade_deficiente",
+                "ind_sistema"
+            ],
+            "description": "Dynamic table config for ejud_dim_processo",
+            "load_method": "full",
+            "transformations": []
+        }
+    ]
+}

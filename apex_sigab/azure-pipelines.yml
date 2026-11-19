@@ -1,0 +1,34 @@
+trigger:
+  branches:
+    include:
+      - prod
+pool: 'Linux'
+variables:
+  AWS_REGION: 'sa-east-1'  
+  S3_BUCKET_NAME: 'sgdai-projetos'
+  PROJETO: 'apex_sigab'
+steps:
+- task: AWSCLI@1
+  displayName: 'Sync SCRIPTS_APEX_SIGAB'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: 'scripts/ s3://$(S3_BUCKET_NAME)/apex/$(PROJETO)/scripts/ --delete'
+    regionName: '$(AWS_REGION)'
+- task: AWSCLI@1
+  displayName: 'Sync CONSULTAS_APEX_SIGAB'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: 'consultas/ s3://$(S3_BUCKET_NAME)/apex/$(PROJETO)/consultas/ --delete'
+    regionName: '$(AWS_REGION)'
+- task: AWSCLI@1
+  displayName: 'Sync JSON_APEX_SIGAB'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: 'consultas/ s3://$(S3_BUCKET_NAME)/apex/$(PROJETO)/json/ --delete'
+    regionName: '$(AWS_REGION)'

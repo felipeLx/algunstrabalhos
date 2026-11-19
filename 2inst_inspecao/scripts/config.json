@@ -1,0 +1,365 @@
+{
+  "tables": [
+    {
+      "task_id": "load_ejud_movimento",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "movimento",
+      "columns": [
+         "coddoc", "dthrmov", "codfase", "codcompl1", "codcompl2", "codcompl3", "usuincl"
+      ],
+      "incremental_column": "dthrmov" ,
+      "load_type": "incremental",
+      "enabled": false
+    },
+    {
+      "task_id": "load_ejud_movimentorelator",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "movimentorelator",
+      "columns": [
+        "coddoc", "dthrmov", "codorgjulg", "codmagrel"
+      ],
+      "incremental_column": "dthrmov",
+      "load_type": "incremental",
+      "enabled": false
+    },
+    {
+      "task_id": "load_ejud_movdistribuicao",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "movdistribuicao",
+      "columns": [
+        "coddoc", "dthrmov", "codfase", "codcompl1", "codcompl2", "codcompl3", "codlocal"
+      ],
+      "incremental_column": "dthrmov",
+      "load_type": "incremental",
+      "enabled": false
+    },
+    {
+      "task_id": "load_ejud_movcancedistr",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "movcancedistr",
+      "columns": [
+        "coddoc", "dthrmov", "dthrmovdistrcance"
+      ],
+      "incremental_column": "dthrmov",
+      "load_type": "incremental",
+      "enabled": false
+    },    
+    {
+      "task_id": "load_ejud_movimentofisico",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "movimentofisico",
+      "columns": [
+        "coddoc", "dthrmov", "codlocal"
+      ],
+      "incremental_column": "dthrmov",
+      "load_type": "incremental",
+      "enabled": false
+    },
+    {
+      "task_id": "load_ejud_t_processo",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "t_processo",
+      "columns": [
+        "coddoc",
+        "dtautua",
+        "codtipproc",
+        "numsequencial",
+        "dv",
+        "numano",
+        "codjustica",
+        "codregi",
+        "codlocregi",
+        "indsupersigil",
+        "indsigil",
+        "indsegrjust",
+        "indprioidoso",
+        "indprioidoso80",
+        "inddoencagrave",
+        "indpriodefic"
+      ],
+      "load_type": "full",
+      "incremental_column": "coddoc",
+      "enabled": false
+    },
+    {
+      "task_id": "load_ejud_orgaojulgador",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "orgaojulgador",
+      "columns": ["codorgjulg", "codlocal", "codcompt"],
+      "load_type": "full",
+      "incremental_column": "codorgjulg",
+      "enabled": false
+    },
+    {
+      "task_id": "load_ejud_competencia",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "competencia",
+      "columns": ["codcompt", "descr", "indconsrec"],
+      "load_type": "full",
+      "incremental_column": "codcompt",
+      "enabled": false
+    },
+    {
+      "task_id": "load_ejud_tipoprocesso",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "tipoprocesso",
+      "columns": ["codtipproc", "descr", "codext", "codextcnj"]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_ejud_processoassunto",
+      "connection": "oracle",
+      "source_schema": "ejud",
+      "target_schema": "temp2inst",
+      "table_name": "processoassunto",
+      "columns": ["coddoc", "codass", "numord"]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_eproc2g_processo",
+      "connection": "mysql",
+      "source_schema": "eproc2g",
+      "target_schema": "temp2inst",
+      "table_name": "processo",
+      "columns": [
+        "id_processo",
+        "num_processo",
+        "id_sigilo",
+        "id_classe_judicial",
+        "cod_competencia",
+        "dth_autuacao"
+      ]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_eproc2g_processo_dado_complementar",
+      "connection": "mysql",
+      "source_schema": "eproc2g",
+      "target_schema": "temp2inst",
+      "table_name": "processo_dado_complementar",
+      "columns": [
+        "id_processo",
+        "id_dado_complementar",
+        "id_dado_comp_valor",
+        "dth_inclusao"
+      ]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_eproc2g_dado_complementar_valor",
+      "connection": "mysql",
+      "source_schema": "eproc2g",
+      "target_schema": "temp2inst",
+      "table_name": "dado_complementar_valor",
+      "columns": [
+        "id_dado_complementar",
+        "id_dado_comp_valor",
+        "dado_comp_valor",
+        "sin_exibe_rotulo"
+      ]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_eproc2g_dado_complementar",
+      "connection": "mysql",
+      "source_schema": "eproc2g",
+      "table_name": "dado_complementar",
+      "target_schema": "temp2inst",
+      "columns": ["id_dado_complementar", "nome"]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_eproc2g_classe_judicial",
+      "connection": "mysql",
+      "source_schema": "eproc2g",
+      "table_name": "classe_judicial",
+      "target_schema": "temp2inst",
+      "columns": ["id_classe_judicial", "cod_classe", "des_classe"]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_eproc2g_competencia_judicial",
+      "connection": "mysql",
+      "source_schema": "eproc2g",
+      "target_schema": "temp2inst",
+      "table_name": "competencia_judicial",
+      "columns": ["cod_competencia", "sin_criminal", "sin_civel"]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    },
+    {
+      "task_id": "load_eproc2g_relacao_classe_judicial_mni",
+      "connection": "mysql",
+      "source_schema": "eproc2g",
+      "target_schema": "temp2inst",
+      "table_name": "relacao_classe_judicial_mni",
+      "columns": [
+        "id_classe_judicial",
+        "cod_mni_classe_judicial",
+        "sin_competencia_criminal",
+        "sin_competencia_civel",
+        "sin_ativo"
+      ]
+      ,"enabled": false
+      ,"load_type": "incremental"
+    }
+  ],
+
+  "transformations": [
+    {
+      "task_id": "transform_ejud_dim_processo",
+      "source_schema": "temp2inst",
+      "target_schema": "temp2inst",
+      "table_name": "ejud_dim_processo",
+      "columns": [
+        "cod_documento",
+        "cod_cnj",
+        "cod_cnj_sigilo",
+        "id_sigilo",
+        "cod_classe_interna",
+        "cod_classe_externa",
+        "cod_classe_cnj",
+        "nm_classe",
+        "ind_originario",
+        "ind_prioridade_idoso",
+        "ind_prioridade_idoso_80",
+        "ind_doenca_grave",
+        "ind_prioridade_deficiente",
+        "dth_autuacao",
+        "ind_crime_adm_publico",
+        "ind_sistema"
+      ],
+      "description": "Dynamic table config for ejud_dim_processo",
+      "depends_on": [
+        "load_ejud_t_processo",
+        "load_ejud_tipoprocesso",
+        "load_ejud_processoassunto"
+      ],
+      "dt_referencia": "dth_autuacao"
+      ,"enabled": false
+    },
+    {
+      "task_id": "transform_eproc2g_dim_processo",
+      "source_schema": "temp2inst",
+      "target_schema": "temp2inst",
+      "table_name": "eproc2g_dim_processo",
+      "columns": [
+        "cod_documento",
+        "cod_cnj",
+        "cod_cnj_sigilo",
+        "id_sigilo",
+        "cod_classe_interna",
+        "cod_classe_externa",
+        "cod_classe_cnj",
+        "nm_classe",
+        "ind_originario",
+        "ind_prioridade_idoso",
+        "ind_prioridade_idoso_80",
+        "ind_doenca_grave",
+        "ind_prioridade_deficiente",
+        "dth_autuacao",
+        "ind_crime_adm_publico",
+        "ind_sistema"
+      ],
+      "description": "Dynamic table config for eproc2g_dim_processo",
+      "depends_on": [
+        "load_eproc2g_processo",
+        "load_eproc2g_processo_dado_complementar",
+        "load_eproc2g_dado_complementar_valor",
+        "load_eproc2g_dado_complementar",
+        "load_eproc2g_classe_judicial",
+        "load_eproc2g_competencia_judicial",
+        "load_eproc2g_relacao_classe_judicial_mni"
+      ],
+      "dt_referencia": "dth_autuacao"
+      ,"enabled": false
+    },
+    {
+      "task_id": "transform_ejud_acervo",
+      "source_schema": "temp2inst",
+      "target_schema": "temp2inst",
+      "table_name": "ejud_acervo",
+      "columns": [
+            "dth_referencia"
+            ,"cod_documento"
+            ,"dth_ultima_distribuicao"      
+            ,"cod_ultimo_relator"
+            ,"cod_ultimo_orgaojulgador" 
+      ],
+      "description": "Tabela que calcula o acervo",
+      "depends_on": [
+        "load_ejud_movimento",
+        "load_ejud_movimentofisico",
+        "load_ejud_movimentorelator",
+        "load_ejud_movdistribuicao",
+        "load_ejud_movcancedistr",
+        "load_ejud_orgaojulgador",
+        "load_ejud_competencia"
+      ]
+      ,"enabled": true
+    }
+  ],
+  "production": [
+    {
+      "task_id": "prod_merge_dim_processo",
+      "source_schema": "temp2inst",
+      "target_schema": "temp2inst",
+      "task_name": "merge_dim_processo",
+      "description": "Run after all transformations",
+      "depends_on": [
+        "transform_ejud_dim_processo",
+        "transform_eproc2g_dim_processo"
+      ],
+      "source": [
+        "temp2inst.ejud_dim_processo",
+        "temp2inst.eproc2g_dim_processo"
+      ],
+      "target": "insp2inst.dim_processo",
+      "key": "cod_documento",
+      "columns": [
+        "cod_documento",
+        "cod_cnj",
+        "cod_cnj_sigilo",
+        "id_sigilo",
+        "cod_classe_interna",
+        "cod_classe_externa",
+        "cod_classe_cnj",
+        "nm_classe",
+        "ind_originario",
+        "ind_prioridade_idoso",
+        "ind_prioridade_idoso_80",
+        "ind_doenca_grave",
+        "ind_prioridade_deficiente",
+        "dth_autuacao",
+        "ind_crime_adm_publico",
+        "ind_sistema"
+      ]
+      ,"enabled": false
+    }
+  ]
+}

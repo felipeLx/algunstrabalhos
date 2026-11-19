@@ -1,0 +1,30 @@
+{
+  "_comment": "Attach to AppRunner-2inst-InstanceRole. Grants read S3 data lake + read Secrets Manager.",
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "S3DataLakeRead",
+      "Effect": "Allow",
+      "Action": [
+        "s3:GetObject",
+        "s3:ListBucket"
+      ],
+      "Resource": [
+        "arn:aws:s3:::sgdai-data-lake",
+        "arn:aws:s3:::sgdai-data-lake/*",
+        "arn:aws:s3:::sgdai-projetos",
+        "arn:aws:s3:::sgdai-projetos/*"
+      ]
+    },
+    {
+      "Sid": "SecretsManagerRead",
+      "Effect": "Allow",
+      "Action": [
+        "secretsmanager:GetSecretValue"
+      ],
+      "Resource": [
+        "arn:aws:secretsmanager:sa-east-1:*:secret:2inst/relatorio-validador/*"
+      ]
+    }
+  ]
+}

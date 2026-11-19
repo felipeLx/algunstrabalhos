@@ -1,0 +1,23 @@
+{
+  "internal_database": {
+    "host": "172.20.30.141",
+    "port": "5432",
+    "database": "postgres",
+    "user": "felipe.lisboa",
+    "password": "Be;180716"
+  },
+  "external_db_config": {
+        "host": "172.20.30.141",
+        "port": "55432",
+        "database": "datajud",
+        "user": "adm_datajud",
+        "password": "tribunaladm"
+    },
+  "variable_mappings": {
+    "dism2_b": 4,
+    "dism4_b": 5,
+    "julgadom2_b": 1,
+    "julgadom4_b": 2,
+    "pendjulg01tg": 3
+  }
+}

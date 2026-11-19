@@ -1,0 +1,19 @@
+/temp
+.claude
+/json_files
+/logs
+/csv
+/csv_exports
+/parquet_files
+/tmp
+/utils/__pycache__
+__pycache__
+*.log
+*.pyc
+/tmp/*
+*/__pycache__
+.env
+*/*logs
+*/*log
+'<MetaConfigManager config_dir='
+<MetaConfigManager config_dir=

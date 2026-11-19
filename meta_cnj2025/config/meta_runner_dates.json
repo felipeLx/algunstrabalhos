@@ -1,0 +1,48 @@
+{
+  "metas": {
+    "meta_02": {
+      "period_start": "2012-01-01",
+      "period_end": "2026-12-31",
+      "meta02_cutoff_date": "2023-12-31",
+      "meta02_15year_cutoff": "2011-12-31"
+    },
+    "meta_04": {
+      "period_start": "2012-01-01",
+      "period_end": "2026-12-31",
+      "meta04_cutoff_date": "2022-12-31",
+      "meta04_15year_cutoff": "2011-12-31",
+      "administrative_improbity_cutoff": "2022-12-31",
+      "crimes_against_public_admin_cutoff": "2022-12-31"
+    },
+    "meta_06": {
+      "period_start": "2012-01-01",
+      "period_end": "2026-12-31",
+      "meta06_cutoff_date": "2025-12-31",
+      "meta06_15year_cutoff": "2011-12-31"
+    },
+    "meta_07": {
+      "period_start": "2012-01-01",
+      "period_end": "2026-12-31",
+      "meta07_cutoff_date": "2025-12-31",
+      "meta07_15year_cutoff": "2011-12-31"
+    },
+    "meta_08": {
+      "period_start": "2012-01-01",
+      "period_end": "2026-12-31",
+      "meta08_cutoff_date": "2024-12-31",
+      "meta08_15year_cutoff": "2011-12-31"
+    },
+    "meta_10": {
+      "period_start": "2012-01-01",
+      "period_end": "2026-12-31",
+      "meta10_cutoff_date": "2024-12-31",
+      "meta10_15year_cutoff": "2011-12-31"
+    },
+    "meta_11": {
+      "period_start": "2012-01-01",
+      "period_end": "2026-12-31",
+      "meta11_cutoff_date": "2025-12-31",
+      "meta11_15year_cutoff": "2011-12-31"
+    }
+  }
+}

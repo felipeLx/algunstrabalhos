@@ -1,0 +1,76 @@
+trigger:
+  branches:
+    include:
+      - prod_aws
+pool: 'Linux'
+variables:
+  AWS_REGION: 'sa-east-1'
+  S3_BUCKET_NAME: 'sgdai-projetos'
+  TIME: '2instancia'
+  PROJETO: '2inst_situacao'
+steps:
+- task: AWSCLI@1
+  displayName: 'Sync eproc2g scripts'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      eproc2g/scripts/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/eproc2g/scripts/
+      --delete
+    regionName: '$(AWS_REGION)'
+
+- task: AWSCLI@1
+  displayName: 'Sync eproc2g json'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      eproc2g/json/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/eproc2g/json/
+      --delete
+    regionName: '$(AWS_REGION)'
+
+- task: AWSCLI@1
+  displayName: 'Sync ejud scripts'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/scripts/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/scripts/
+      --delete
+    regionName: '$(AWS_REGION)'
+
+- task: AWSCLI@1
+  displayName: 'Sync ejud json'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/json/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/json/
+      --delete
+    regionName: '$(AWS_REGION)'
+
+- task: AWSCLI@1
+  displayName: 'Sync eproc2g consultas'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      eproc2g/consultas/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/eproc2g/consultas/
+      --delete
+    regionName: '$(AWS_REGION)'
+
+- task: AWSCLI@1
+  displayName: 'Sync ejud consultas'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/consultas/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/consultas/
+      --delete
+    regionName: '$(AWS_REGION)'

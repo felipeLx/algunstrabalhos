@@ -1,0 +1,36 @@
+# S3 path components (ouro quality check)
+s3_bucket: sgdai-data-lake
+s3_prefix: ouro
+s3_projeto: dw_2inst_ouro
+s3_tabela: tb_ft_meta_analitico
+
+aws_profile: ""
+
+# Data quality checks
+date_col: "dth_referencia"
+not_null_cols:
+  - id_processo
+  - dth_referencia
+
+# Processing
+outlier_multiplier: 1.5
+max_rows: 500000
+
+# Oracle connection (password via env var ORACLE_PASSWORD)
+oracle:
+  host: ""
+  port: 1521
+  service_name: ""
+  user: ""
+  password_env: ORACLE_PASSWORD
+
+# Bronze vs Oracle row count reconciliation
+# s3_path: relative path inside s3_bucket (no leading slash)
+# oracle_table: SCHEMA.TABLE
+bronze_tables:
+  - s3_path: bronze/ejud/autoassociado/movimentorelator
+    oracle_table: TJ01.MOVIMENTORELATOR
+  - s3_path: bronze/ejud/autoassociado/movimento
+    oracle_table: TJ01.MOVIMENTO
+  - s3_path: bronze/ejud/autoassociado/t_processo
+    oracle_table: TJ01.T_PROCESSO

@@ -1,0 +1,73 @@
+trigger:
+  branches:
+    include:
+      - prod_aws
+pool: 'Linux'
+variables:
+  AWS_REGION: 'sa-east-1'
+  S3_BUCKET_NAME: 'sgdai-projetos'
+  TIME: '2instancia'
+  PROJETO: '2inst_produtividade'
+steps:
+- task: AWSCLI@1
+  displayName: 'Sync EJUD scripts'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/scripts/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/scripts/
+      --delete --exclude "*" --include "*.py"
+    regionName: '$(AWS_REGION)'
+ 
+ 
+- task: AWSCLI@1
+  displayName: 'Sync EJUD EMR config'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/json/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/json/
+      --delete
+    regionName: '$(AWS_REGION)'
+ 
+ 
+- task: AWSCLI@1
+  displayName: 'Sync EPROC2G scripts'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      eproc2g/scripts/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/eproc2g/scripts/
+      --delete --exclude "*" --include "*.py"
+    regionName: '$(AWS_REGION)'
+ 
+ 
+- task: AWSCLI@1
+  displayName: 'Sync EPROC2G EMR config'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      eproc2g/json/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/eproc2g/json/
+      --delete
+    regionName: '$(AWS_REGION)'
+ 
+ 
+- task: AWSCLI@1
+  displayName: 'Upload orchestrator run_all_produtividade_emr.py'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'cp'
+    awsArguments: >-
+      run_all_produtividade_emr.py
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/run_all_produtividade_emr.py
+    regionName: '$(AWS_REGION)'

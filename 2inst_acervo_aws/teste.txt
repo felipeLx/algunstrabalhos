@@ -1,0 +1,1 @@
+arquivo txt apenas para gerar um pull request. fiz pq não tinha branch de PRD.

@@ -1,0 +1,287 @@
+WITH ORGAO_GABINETE_MAGISTRADO AS ( 
+    SELECT 
+        OS.ID_ORGAO, 
+        O.ID_ORGAO AS COD_ORGAO, 
+        O.DES_ORGAO, 
+        JM.COD_MAGISTRADO, 
+        M.NOME_MAGISTRADO 
+    FROM eproc2g.orgao OS 
+    JOIN (
+        SELECT ID_ORGAO, COD_ORGAO_SECRETARIA, DES_ORGAO
+        FROM eproc2g.orgao
+        WHERE COD_ORGAO_SECRETARIA IS NOT NULL
+    ) O
+        ON CAST(OS.ID_ORGAO AS STRING) = CAST(O.COD_ORGAO_SECRETARIA AS STRING)
+    JOIN (
+        SELECT COD_MAGISTRADO, ID_ORGAO
+        FROM eproc2g.juizo_magistrado
+        WHERE COD_SITUACAO_MAGISTRADO_JUIZO = 1
+          AND SIN_ATIVO = 'S'
+          AND DTH_FINAL_JUIZO >= CURRENT_TIMESTAMP
+    ) JM
+        ON CAST(O.ID_ORGAO AS STRING) = CAST(JM.ID_ORGAO AS STRING)
+    JOIN eproc2g.magistrado M
+        ON CAST(JM.COD_MAGISTRADO AS STRING) = CAST(M.COD_MAGISTRADO AS STRING)
+),mov_distribuido AS (
+    SELECT 
+        PE.ID_PROCESSO,
+        PE.DTH_EVENTO,
+        PE.ID_PROCESSO_EVENTO,
+        PE.ID_EVENTO_JUDICIAL,
+        EJ.COD_EVENTO,
+        EJ.DES_EVENTO,
+        EJ.COD_MNI_MOVIMENTO,
+        HDJ.COD_MAGISTRADO,
+        HDJ.ID_ORGAO_DESTINO AS ID_ORGAO_EVENTO,
+        NULL AS IND_SESSAO,
+        MM.FLG_MONOCRATICO AS IND_MONOCRATICO,
+        MM.FLG_COLEGIADO AS IND_COLEGIADO,
+        'DISTRIBUIDO_REDISTRIBUIDO' AS TP_MOVIMENTO,
+        11 AS ITEM,
+        1 AS SUBITEM,
+        'EPROC2G' AS IND_SISTEMA
+    FROM eproc2g.processo_evento PE 
+    JOIN eproc2g.evento_judicial EJ
+        ON PE.ID_EVENTO_JUDICIAL = EJ.ID_EVENTO_JUDICIAL
+    JOIN (
+        SELECT COD_MNI_MOVIMENTO, FLG_MONOCRATICO, FLG_COLEGIADO, NOME_MOVIMENTO
+        FROM dw2inst.tf_arvore_mni_movimento
+        WHERE COD_MNI_MOVIMENTO IN (26, 36)
+    ) MM
+        ON EJ.COD_MNI_MOVIMENTO = MM.COD_MNI_MOVIMENTO
+    JOIN eproc2g.historico_distribuicao_judicial HDJ
+        ON PE.ID_PROCESSO_EVENTO = HDJ.ID_PROCESSO_EVENTO
+    WHERE EJ.COD_MNI_MOVIMENTO IN (26, 36)
+),mov_julgado_monocraticamente AS (
+    SELECT 
+        PE.ID_PROCESSO,
+        PE.DTH_EVENTO,
+        PE.ID_PROCESSO_EVENTO,
+        PE.ID_EVENTO_JUDICIAL,
+        EJ.COD_EVENTO,
+        EJ.DES_EVENTO,
+        EJ.COD_MNI_MOVIMENTO,
+        CAST(NULL AS INT) AS COD_MAGISTRADO,
+        PE.ID_ORGAO_EVENTO,
+        CASE 
+            WHEN SJIM.ID_SESSAO_JULGAMENTO_ITEM IS NOT NULL THEN 'S'
+            ELSE 'N'
+        END AS IND_SESSAO,
+        MM.FLG_MONOCRATICO AS IND_MONOCRATICO,
+        MM.FLG_COLEGIADO AS IND_COLEGIADO,
+        'JULGAMENTO_MONOCRATICO' AS TP_MOVIMENTO,
+        11 AS ITEM,
+        2 AS SUBITEM,
+        'EPROC2G' AS IND_SISTEMA
+    FROM eproc2g.processo_evento PE 
+    JOIN eproc2g.evento_judicial EJ
+        ON PE.ID_EVENTO_JUDICIAL = EJ.ID_EVENTO_JUDICIAL
+    JOIN (
+        SELECT COD_MNI_MOVIMENTO, FLG_MONOCRATICO, FLG_COLEGIADO, NOME_MOVIMENTO
+        FROM dw2inst.tf_arvore_mni_movimento
+        WHERE CAMINHO_HIERARQUIA_TXT LIKE '% 193 %'
+    ) MM
+        ON EJ.COD_MNI_MOVIMENTO = MM.COD_MNI_MOVIMENTO
+    LEFT JOIN eproc2g.sessao_julgamento_item SJI
+        ON PE.ID_PROCESSO_EVENTO = SJI.ID_PROCESSO_EVENTO_RESULTADO
+    LEFT JOIN (
+        SELECT DISTINCT ID_SESSAO_JULGAMENTO_ITEM
+        FROM eproc2g.sessao_julgamento_item_magistrado
+    ) SJIM
+        ON SJIM.ID_SESSAO_JULGAMENTO_ITEM = SJI.ID_SESSAO_JULGAMENTO_ITEM
+    WHERE SJIM.ID_SESSAO_JULGAMENTO_ITEM IS NULL
+    and PE.DTH_EVENTO >= date_trunc('day', add_months(current_timestamp(), -12)) - INTERVAL 1 SECOND 
+),mov_julgado_colegiado AS (
+    SELECT 
+        PE.ID_PROCESSO,
+        PE.DTH_EVENTO,
+        PE.ID_PROCESSO_EVENTO,
+        PE.ID_EVENTO_JUDICIAL,
+        EJ.COD_EVENTO,
+        EJ.DES_EVENTO,
+        EJ.COD_MNI_MOVIMENTO,
+        CAST(NULL AS INT) AS COD_MAGISTRADO,
+        PE.ID_ORGAO_EVENTO,
+        CASE 
+            WHEN SJIM.ID_SESSAO_JULGAMENTO_ITEM IS NOT NULL THEN 'S'
+            ELSE 'N'
+        END AS IND_SESSAO,
+        MM.FLG_MONOCRATICO AS IND_MONOCRATICO,
+        MM.FLG_COLEGIADO AS IND_COLEGIADO,
+        'JULGAMENTO_COLEGIADO' AS TP_MOVIMENTO,
+        11 AS ITEM,
+        3 AS SUBITEM,
+        'EPROC2G' AS IND_SISTEMA
+    FROM eproc2g.processo_evento PE 
+    JOIN eproc2g.evento_judicial EJ
+        ON PE.ID_EVENTO_JUDICIAL = EJ.ID_EVENTO_JUDICIAL
+    JOIN (
+        SELECT COD_MNI_MOVIMENTO, FLG_MONOCRATICO, FLG_COLEGIADO, NOME_MOVIMENTO
+        FROM dw2inst.tf_arvore_mni_movimento
+        WHERE CONCAT(' > ', CAMINHO_HIERARQUIA_TXT, ' > ') LIKE '% > 193 > %'
+    ) MM
+        ON EJ.COD_MNI_MOVIMENTO = MM.COD_MNI_MOVIMENTO
+    JOIN eproc2g.sessao_julgamento_item SJI
+        ON PE.ID_PROCESSO_EVENTO = SJI.ID_PROCESSO_EVENTO_RESULTADO
+    JOIN (
+        SELECT DISTINCT ID_SESSAO_JULGAMENTO_ITEM
+        FROM eproc2g.sessao_julgamento_item_magistrado
+    ) SJIM
+        ON SJIM.ID_SESSAO_JULGAMENTO_ITEM = SJI.ID_SESSAO_JULGAMENTO_ITEM
+    WHERE SJIM.ID_SESSAO_JULGAMENTO_ITEM IS NOT NULL
+    and PE.DTH_EVENTO >= date_trunc('day', add_months(current_timestamp(), -12)) - INTERVAL 1 SECOND 
+),mov_baixado AS (
+    SELECT 
+        PE.ID_PROCESSO,
+        PE.DTH_EVENTO,
+        PE.ID_PROCESSO_EVENTO,
+        PE.ID_EVENTO_JUDICIAL,
+        EJ.COD_EVENTO,
+        EJ.DES_EVENTO,
+        EJ.COD_MNI_MOVIMENTO,
+        CAST(NULL AS INT) AS COD_MAGISTRADO,
+        PE.ID_ORGAO_EVENTO,
+        NULL AS IND_SESSAO,
+        MM.FLG_MONOCRATICO AS IND_MONOCRATICO,
+        MM.FLG_COLEGIADO AS IND_COLEGIADO,
+        'BAIXA' AS TP_MOVIMENTO,
+        11 AS ITEM,
+        4 AS SUBITEM,
+        'EPROC2G' AS IND_SISTEMA
+    FROM eproc2g.processo_evento PE 
+    JOIN eproc2g.evento_judicial EJ
+        ON PE.ID_EVENTO_JUDICIAL = EJ.ID_EVENTO_JUDICIAL
+    JOIN (
+        SELECT COD_MNI_MOVIMENTO, FLG_MONOCRATICO, FLG_COLEGIADO, NOME_MOVIMENTO
+        FROM dw2inst.tf_arvore_mni_movimento
+        WHERE CONCAT(' > ', CAMINHO_HIERARQUIA_TXT, ' > ') LIKE '% > 22 > %'
+    ) MM
+        ON EJ.COD_MNI_MOVIMENTO = MM.COD_MNI_MOVIMENTO
+    WHERE PE.DTH_EVENTO >= date_trunc('day', add_months(current_timestamp(), -12)) - INTERVAL 1 SECOND 
+),mov_despacho AS (
+    SELECT 
+        PE.ID_PROCESSO,
+        PE.DTH_EVENTO,
+        PE.ID_PROCESSO_EVENTO,
+        PE.ID_EVENTO_JUDICIAL,
+        EJ.COD_EVENTO,
+        EJ.DES_EVENTO,
+        EJ.COD_MNI_MOVIMENTO,
+        CAST(NULL AS INT) AS COD_MAGISTRADO,
+        PE.ID_ORGAO_EVENTO,
+        NULL AS IND_SESSAO,
+        MM.FLG_MONOCRATICO AS IND_MONOCRATICO,
+        MM.FLG_COLEGIADO AS IND_COLEGIADO,
+        'DESPACHO' AS TP_MOVIMENTO,
+        12 AS ITEM,
+        1 AS SUBITEM,
+        'EPROC2G' AS IND_SISTEMA
+    FROM eproc2g.processo_evento PE 
+    JOIN eproc2g.evento_judicial EJ
+        ON PE.ID_EVENTO_JUDICIAL = EJ.ID_EVENTO_JUDICIAL
+    JOIN (
+        SELECT COD_MNI_MOVIMENTO, FLG_MONOCRATICO, FLG_COLEGIADO, NOME_MOVIMENTO, CAMINHO_HIERARQUIA_TXT
+        FROM dw2inst.tf_arvore_mni_movimento
+        WHERE CONCAT(' > ', CAMINHO_HIERARQUIA_TXT, ' > ') LIKE '% > 11009 > %'
+    ) MM
+        ON EJ.COD_MNI_MOVIMENTO = MM.COD_MNI_MOVIMENTO
+    WHERE PE.DTH_EVENTO >= date_trunc('day', add_months(current_timestamp(), -12)) - INTERVAL 1 SECOND 
+),mov_decisao_monocratica AS (
+    SELECT 
+        PE.ID_PROCESSO,
+        PE.DTH_EVENTO,
+        PE.ID_PROCESSO_EVENTO,
+        PE.ID_EVENTO_JUDICIAL,
+        EJ.COD_EVENTO,
+        EJ.DES_EVENTO,
+        EJ.COD_MNI_MOVIMENTO,
+        CAST(NULL AS INT) AS COD_MAGISTRADO,
+        PE.ID_ORGAO_EVENTO,
+        NULL AS IND_SESSAO,
+        MM.FLG_MONOCRATICO AS IND_MONOCRATICO,
+        MM.FLG_COLEGIADO AS IND_COLEGIADO,
+        'DECISAO_MONOCRATICA' AS TP_MOVIMENTO,
+        12 AS ITEM,
+        2 AS SUBITEM,
+        'EPROC2G' AS IND_SISTEMA
+    FROM eproc2g.processo_evento PE 
+    JOIN eproc2g.evento_judicial EJ
+        ON PE.ID_EVENTO_JUDICIAL = EJ.ID_EVENTO_JUDICIAL
+    JOIN (
+        SELECT COD_MNI_MOVIMENTO, FLG_MONOCRATICO, FLG_COLEGIADO, NOME_MOVIMENTO, CAMINHO_HIERARQUIA_TXT
+        FROM dw2inst.tf_arvore_mni_movimento
+        WHERE CONCAT(' > ', CAMINHO_HIERARQUIA_TXT, ' > ') LIKE '% > 3 > %'
+          AND FLG_MONOCRATICO = 'S'
+    ) MM
+        ON EJ.COD_MNI_MOVIMENTO = MM.COD_MNI_MOVIMENTO
+    WHERE PE.DTH_EVENTO >= date_trunc('day', add_months(current_timestamp(), -12)) - INTERVAL 1 SECOND 
+), mov_voto AS (
+    SELECT 
+        PE.ID_PROCESSO,
+        PE.DTH_EVENTO,
+        PE.ID_PROCESSO_EVENTO,
+        PE.ID_EVENTO_JUDICIAL,
+        EJ.COD_EVENTO,
+        EJ.DES_EVENTO,
+        EJ.COD_MNI_MOVIMENTO,
+        CAST(NULL AS INT) AS COD_MAGISTRADO,
+        PE.ID_ORGAO_EVENTO,
+        NULL AS IND_SESSAO,
+        MM.FLG_MONOCRATICO AS IND_MONOCRATICO,
+        MM.FLG_COLEGIADO AS IND_COLEGIADO,
+        'VOTO' AS TP_MOVIMENTO,
+        12 AS ITEM,
+        3 AS SUBITEM,
+        'EPROC2G' AS IND_SISTEMA
+    FROM eproc2g.processo_evento PE 
+    JOIN eproc2g.evento_judicial EJ
+        ON PE.ID_EVENTO_JUDICIAL = EJ.ID_EVENTO_JUDICIAL
+    JOIN (
+        SELECT COD_MNI_MOVIMENTO, FLG_MONOCRATICO, FLG_COLEGIADO, NOME_MOVIMENTO, CAMINHO_HIERARQUIA_TXT
+        FROM dw2inst.tf_arvore_mni_movimento
+        WHERE CONCAT(' > ', CAMINHO_HIERARQUIA_TXT, ' > ') LIKE '% > 14092 > %'
+    ) MM
+        ON EJ.COD_MNI_MOVIMENTO = MM.COD_MNI_MOVIMENTO
+    WHERE PE.DTH_EVENTO >= date_trunc('day', add_months(current_timestamp(), -12)) - INTERVAL 1 SECOND 
+),movimentos AS (
+    SELECT * FROM mov_distribuido
+    UNION ALL
+    SELECT * FROM mov_julgado_monocraticamente
+    UNION ALL
+    SELECT * FROM mov_julgado_colegiado
+    UNION ALL
+    SELECT * FROM mov_baixado
+    UNION ALL
+    SELECT * FROM mov_despacho
+    UNION ALL
+    SELECT * FROM mov_decisao_monocratica
+    UNION ALL
+    SELECT * FROM mov_voto
+)
+SELECT  
+    CAST(M.ID_PROCESSO AS DECIMAL(30,0))         AS ID_PROCESSO,
+    M.DTH_EVENTO, 
+    CAST(M.ID_PROCESSO_EVENTO AS DECIMAL(30,0)) AS ID_PROCESSO_EVENTO,
+    CASE 
+        WHEN M.ITEM = 1 and m.subitem = 1 THEN CAST(M.ID_ORGAO_EVENTO AS INT)
+        ELSE CAST(OGM.COD_ORGAO AS INT)
+    END AS COD_ORGAO_GABINETE,
+    CASE 
+        WHEN M.ITEM = 1 and m.subitem = 1 THEN CAST(M.COD_MAGISTRADO AS STRING)
+        ELSE CAST(OGM.COD_MAGISTRADO AS STRING)
+    END AS COD_MAGISTRADO,    
+    CAST(M.ID_EVENTO_JUDICIAL AS INT)            AS ID_EVENTO_JUDICIAL,
+    CAST(M.COD_EVENTO AS STRING)                 AS COD_EVENTO,
+    CAST(M.COD_MNI_MOVIMENTO AS INT)             AS COD_MNI_MOVIMENTO,
+    CAST(M.DES_EVENTO AS STRING)                 AS DES_EVENTO,
+    CAST(M.IND_SESSAO AS STRING)                 AS IND_SESSAO,
+    CAST(M.IND_MONOCRATICO AS STRING)            AS IND_MONOCRATICO,
+    CAST(M.IND_COLEGIADO AS STRING)              AS IND_COLEGIADO,
+    CAST(M.TP_MOVIMENTO AS STRING)               AS TP_MOVIMENTO,
+    CAST(M.ITEM AS INT)        		             AS ITEM,
+    CAST(M.SUBITEM AS INT)        		         AS SUBITEM,
+    CAST(M.IND_SISTEMA AS STRING)                AS IND_SISTEMA,
+    CURRENT_TIMESTAMP AS DTH_ETL
+FROM MOVIMENTOS M
+LEFT JOIN ORGAO_GABINETE_MAGISTRADO OGM
+    ON M.ID_ORGAO_EVENTO = OGM.ID_ORGAO;

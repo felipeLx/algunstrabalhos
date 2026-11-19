@@ -1,0 +1,48 @@
+trigger:
+  branches:
+    include:
+      - prod_aws
+pool: 'Linux'
+variables:
+  AWS_REGION: 'sa-east-1'
+  S3_BUCKET_NAME: 'sgdai-projetos'
+  TIME: '2instancia'
+  PROJETO: '2inst_datajud'
+steps:
+- task: AWSCLI@1
+  displayName: 'Sync EJUD docs'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/docs/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/docs/
+      --delete
+    regionName: '$(AWS_REGION)'
+
+
+- task: AWSCLI@1
+  displayName: 'Sync EPROC2G docs'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      eproc2g/docs/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/eproc2g/docs/
+      --delete
+    regionName: '$(AWS_REGION)'
+
+
+- task: AWSCLI@1
+  displayName: 'Sync root docs'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      .
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/
+      --delete --exclude "*" --include "*.md"
+    regionName: '$(AWS_REGION)'

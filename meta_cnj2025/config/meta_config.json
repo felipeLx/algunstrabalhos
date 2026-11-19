@@ -1,0 +1,368 @@
+{
+  "metas": {
+    "situacao_rules": {
+      "distribution_situacoes": {
+        "codes": [
+          9,65,81, 61, 24
+        ],
+        "description": "Situacao codes for distribution events",
+        "note": "Removed 9, 65, 81 - not available in parquet files and 24 that have all registers in the 61"
+      },
+      "suspenso_situacoes": {
+        "codes": [128,135,92,93,46,45,94,95,47,144,96,48,49]
+      },
+      "mpum_situacoes": {
+        "codes": [
+          17,
+          34
+        ],
+        "description": "Situacao codes for PPUM events"
+      },
+      "judgment_situacoes": {
+        "codes": [  
+          62,
+          27,
+          28,
+          2,
+          10,
+          23,
+          41,
+          18,
+          29,
+          90,
+          129,
+          26,
+          65,
+          91,
+          134,
+          154,
+          132,
+          17,
+          34
+        ],
+        "description": "Situacao codes for judgment events",
+        "note": "Removed 65, 91, 140 - not available in parquet files"
+      },
+      "decm_situacoes": {
+        "codes": [140]
+      },
+      "prim_sent_situacoes": {
+        "codes": [
+          27,
+          28,
+          62,
+          18,
+          29,
+          90,
+          129
+        ],
+        "description": "Situacao codes for sentencing events (primeira sentença)"
+      },
+      "baixa_situacoes": {
+        "codes": [
+          2,
+          10,
+          23,
+          41,
+          134,
+          154,
+          132
+        ],
+        "description": "Situacao codes for baixa/archiving events",
+        "note": "Filtered based on available parquet files"
+      },
+      "available_situacoes": {
+        "codes": [
+          2,
+          10,
+          23,
+          24,
+          25,
+          27,
+          28,
+          41,
+          62,
+          88,
+          90,
+          129,
+          134,
+          154,
+          18,
+          29
+        ],
+        "description": "Only situacoes that have actual parquet files on the server"
+      },
+      "valid_movement_codes": {
+        "codes": [
+          11423,
+          11424,
+          11425,
+          12476,
+          12479,
+          15486,
+          15487,
+          15488
+        ]
+      }
+    },
+    "metas": {
+      "meta_01": ["cnm01", "desm01", "susm01", "julgadom01"],
+      "meta_02": ["dism02", "julgadom02", "susm02", "desm02_ant"],
+      "meta_04": ["dism04", "julgadom04", "susm04", "desm04_ant"],
+      "meta_06": ["dism06", "julgadom06", "susm06", "desm06_ant"],
+      "meta_08": ["dism08", "julgadom08", "susm08", "desm08_ant"],
+      "meta_10": ["dism10", "julgadom10", "susm10", "desm10_ant"],
+      "meta_11": ["dism11", "julgadom11", "susm11", "desm11_ant"]
+    },
+    "paths": {
+      "spark_events_path": "/projetos/meta/meta_cnj2025/tmp/spark-events",
+      "classes_xlsx_path": "csv/classes.xlsx",
+      "ejud_base_path": "/data/prata/ejud",
+      "situacao_base_path": "/data/prata/ejud/situacao_ejud",
+      "export_base_path": "/data/prata/ejud/meta_cnj2026"
+    },
+    "processing": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  },
+  "meta_01": {
+    "description": "Configuration for Meta CNJ 2026 Meta 01 - Casos novos, decisões e sentenças",
+    "filter_rules": "meta_03",
+    "date_rules": {
+      "period_start": "2025-12-21",
+      "period_end": "2026-12-31",
+      "reference_date": "2026-12-31",
+      "meta01_cutoff_date": "2025-12-21"
+    },
+    "processing": {
+      "spark_partitions": 200,
+      "cache_large_datasets": true,
+      "use_broadcast_join": true,
+      "memory_optimization": true
+    },
+    "paths": {
+      "meta01_filter_paths": [
+        "parquet_files/filtered_coddoc_classe_conhecimento.parquet"
+      ],
+      "distr_judg": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_01/current/distrib_no_judg.parquet",
+      "classes_xlsx_path": "csv/classes.xlsx",
+      "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "eproc_bronze_path": "/opt/parquet/data/bronze/eproc2g",
+      "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_01/current/cnm01.parquet",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_01",
+      "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_01"
+    }
+  },
+  "meta_02": {
+    "description": "Configuration for Meta CNJ 2026 Meta 02 - Taxa de congestionamento",
+    "date_rules": {
+      "period_start": "2024-01-01",
+      "period_end": "2026-12-31",
+      "meta02_cutoff_date": "2023-12-31",
+      "meta02_15year_cutoff": "2011-12-31"
+    },
+    "paths": {
+      "meta02_filter_paths": [
+        "parquet_files/filtered_coddoc_classe_conhecimento.parquet"
+      ],
+    "spark_events_path": "/opt/parquet/projetos/meta/meta_cnj2026/tmp/spark-events",
+      "classes_xlsx_path": "csv/classes.xlsx",
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_02/current/dism02.parquet",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_02"
+    },
+    "processing": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  },
+  "meta_04": {
+    "description": "Configuration for Meta CNJ 2026 Meta 04 - Crimes contra administração pública e improbidade administrativa",
+    "date_rules": {
+      "period_start": "2023-01-01",
+      "period_end": "2026-12-31",
+      "meta04_cutoff_date": "2022-12-31",
+      "meta04_15year_cutoff": "2011-12-31",
+      "administrative_improbity_cutoff": "2022-12-31",
+      "crimes_against_public_admin_cutoff": "2022-12-31"
+    },
+    "paths": {
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_04",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_04/current/dism04.parquet",
+      "meta04_filter_paths": [
+        "./parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+        "./parquet_files/filtered_coddoc_improbidade.parquet",
+        "./parquet_files/filtered_coddoc_adm_publica.parquet"
+      ]
+    },
+    "candidate_generation": {
+      "filter_keywords": [
+        "Administração Pública",
+        "crime",
+        "improbidade"
+      ],
+      "situacao_codes": [25, 88],
+      "date_cutoff": "2024-01-01",
+      "export_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_04/candidates",
+      "variables": {
+        "suspension_candidates": {
+          "description": "Current suspension candidates for daily processing",
+          "business_rule": "(dism - julgado) ∩ susm"
+        },
+        "historical_suspension_candidates": {
+          "description": "Historical suspension candidates for one-time analysis", 
+          "business_rule": "(dism_ant - julgado_ant) ∩ susm_ant"
+        }
+      }
+    },
+    "processing": {
+      "origin_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_08/current/dism08.parquet",
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  },
+  "meta_06": {
+    "description": "Configuration for Meta CNJ 2026 Meta 06 - (Bootstrap: identical to Meta 04, update as needed)",
+    "date_rules": {
+      "meta06_cutoff_date": "2025-12-31",
+      "meta06_15year_cutoff": "2012-12-31",
+      "period_start": "2026-01-01",
+      "period_end": "2026-12-31"
+    },
+    "paths": {
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_06",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_06/current/dism06.parquet",
+      "meta06_filter_paths": [
+        "./parquet_files/filtered_coddoc_crime_ambiental.parquet"
+      ]
+    },
+    "processing": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  },
+  "meta_07": {
+    "description": "Configuration for Meta CNJ 2026 Meta 07 - (Bootstrap: identical to Meta 04, update as needed)",
+    "date_rules": {
+      "meta07_cutoff_date": "2025-12-31",
+      "meta07_15year_cutoff": "2011-12-31",
+      "period_start": "2026-01-01",
+      "period_end": "2026-12-31"
+    },
+    "paths": {
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_07",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_07/current/dism07.parquet",
+      "meta07_filter_paths": [
+        "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_07/current/dism07.parquet",
+        "parquet_files/filtered_coddoc_indigena_quilombola.parquet"
+      ]
+    },
+    "processing": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  },
+  "meta_08": {
+    "description": "Configuration for Meta CNJ 2026 Meta 08 - (Bootstrap: identical to Meta 04, update as needed)",
+    "date_rules": {
+      "meta08_cutoff_date": "2024-12-31",
+      "meta08_15year_cutoff": "2012-12-31",
+      "period_start": "2025-01-01",
+      "period_end": "2026-12-31"
+    },
+    "paths": {
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_08",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_08/current/dism08.parquet",
+      "meta08_filter_paths": [
+        "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+        "parquet_files/filtered_coddoc_feminicidio.parquet",
+        "parquet_files/filtered_coddoc_violencia_domestica.parquet"
+      ]
+    },
+    "processing": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  },
+  "meta_10": {
+    "description": "Configuration for Meta CNJ 2026 Meta 10 - (Bootstrap: identical to Meta 04, update as needed)",
+    "date_rules": {
+      "meta10_cutoff_date": "2024-12-31",
+      "meta10_15year_cutoff": "2011-12-31",
+      "period_start": "2025-01-01",
+      "period_end": "2026-12-31"
+    },
+    "paths": {
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_10",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_10/current/dism10.parquet",
+      "meta10_filter_paths": [
+        "parquet_files/filtered_coddoc_crianca_adolescente.parquet"
+      ]
+    },
+    "processing": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  },
+  "meta_11": {
+    "description": "Configuration for Meta CNJ 2026 Meta 11 - (Bootstrap: identical to Meta 04, update as needed)",
+    "date_rules": {
+      "meta11_cutoff_date": "2025-12-31",
+      "meta11_15year_cutoff": "2011-12-31",
+      "period_start": "2026-01-01",
+      "period_end": "2026-12-31"
+    },
+    "paths": {
+      "ejud_base_path": "/opt/parquet/data/prata/ejud",
+      "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+      "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_11",
+      "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_11/current/dism11.parquet",
+      "meta11_filter_paths": [
+        "parquet_files/filtered_coddoc_idosos.parquet"
+      ]
+    },
+    "processing": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join": false,
+      "memory_optimization": true
+    }
+  }
+}

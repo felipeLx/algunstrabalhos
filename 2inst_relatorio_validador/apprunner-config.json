@@ -1,0 +1,38 @@
+{
+  "_comment": "App Runner service config. Deploy with: aws apprunner create-service --cli-input-json file://apprunner-config.json --profile tjrj",
+  "_cost_note": "0.25 vCPU / 0.5 GB = ~$5-10/month for 2-10 users. Pause service if unused: aws apprunner pause-service --service-arn <ARN>",
+  "_terminate_note": "To delete after 2 months if unused: aws apprunner delete-service --service-arn <ARN>",
+  "ServiceName": "2inst-relatorio-validador",
+  "SourceConfiguration": {
+    "AuthenticationConfiguration": {
+      "AccessRoleArn": "arn:aws:iam::ACCOUNT_ID:role/AppRunnerECRAccessRole"
+    },
+    "AutoDeploymentsEnabled": true,
+    "ImageRepository": {
+      "ImageIdentifier": "ACCOUNT_ID.dkr.ecr.sa-east-1.amazonaws.com/2inst-relatorio-validador:latest",
+      "ImageRepositoryType": "ECR",
+      "ImageConfiguration": {
+        "Port": "8080",
+        "RuntimeEnvironmentVariables": {
+          "SECRET_NAME": "2inst/relatorio-validador/credentials",
+          "AWS_REGION": "sa-east-1"
+        }
+      }
+    }
+  },
+  "InstanceConfiguration": {
+    "Cpu": "0.25 vCPU",
+    "Memory": "0.5 GB",
+    "InstanceRoleArn": "arn:aws:iam::ACCOUNT_ID:role/AppRunner-2inst-InstanceRole"
+  },
+  "HealthCheckConfiguration": {
+    "Protocol": "HTTP",
+    "Path": "/_stcore/health",
+    "Interval": 10,
+    "Timeout": 5,
+    "HealthyThreshold": 1,
+    "UnhealthyThreshold": 5
+  },
+  "AutoScalingConfigurationArn": "arn:aws:apprunner:sa-east-1:ACCOUNT_ID:autoscalingconfiguration/2inst-validador-single/1/REVISION",
+  "_auto_scaling_note": "Create auto-scaling config with MinSize=1 MaxSize=1 MaxConcurrency=25 to stay on single instance"
+}

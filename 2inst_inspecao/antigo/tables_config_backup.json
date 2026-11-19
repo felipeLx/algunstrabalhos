@@ -1,0 +1,34 @@
+{
+  "tables": [
+    {
+      "schema_name": "ejud",
+      "table_name": "t_processo",
+      "columns": [
+        "coddoc",
+        "codtipproc",
+        "numsequencial",
+        "dv",
+        "numano",
+        "codjustica",
+        "codregi",
+        "codlocregi",
+        "indsupersigil",
+        "indsigil",
+        "indsegrjust",
+        "indprioidoso",
+        "indprioidoso80",
+        "inddoencagrave",
+        "indpriodefic"
+      ]
+    },
+    {
+      "schema_name": "ejud",
+      "table_name": "tipoprocesso",
+      "columns": [
+        "codtipproc",
+        "descr",
+        "codext"
+      ]
+    }
+  ]
+}

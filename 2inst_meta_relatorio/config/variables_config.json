@@ -1,0 +1,444 @@
+{
+    "meta_01": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_01/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_01/current",
+	    "eproc_evento_judicial_path": "data/bronze/eproc2g/evento_judicial",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": ["cnm01.parquet", "julgadom01.parquet", "desm01.parquet", "susm01.parquet"]
+        },
+        "variable_dimension_map": {
+            "cnm01": 1,
+            "julgadom01": 2,
+            "susm01": 3,
+            "desm01": 4
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 100"
+        },
+        "function": {
+            "case1": "sum(julgadom01) divide by the sum(cnm01 + desm01 + susm01)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    },
+    "meta_02": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_02/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_02/current",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": ["dism02.parquet", "susm02.parquet", "desm02_ant.parquet", "dism02_ant.parquet", "susm02_ant.parquet", "julgadom02.parquet", "julgadom02_ant.parquet"]
+        },
+        "variable_dimension_map": {
+            "dism02": 6,
+            "julgadom02": 7,
+            "susm02": 8,
+            "desm02_ant": 9,
+            "julgadom02_ant": 10,
+            "dism02_ant": 11,
+            "susm02_ant": 12
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 100"
+        },
+        "function": {
+            "case1": "sum(julgadom02) divide by the sum(sum(dism02 + desm02) - susm02)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    },
+    "meta_04": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_04/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_04/current",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": ["dism04.parquet","julgadom04.parquet", "susm04.parquet"]
+        },
+        "variable_dimension_map": {
+            "dism04": 13,
+            "julgadom04": 14,
+            "susm04": 15
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 100"
+        },
+        "function": {
+            "case1": "sum(julgadom04) divide by the sum(sum(dism04 + desm04) - susm04)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    },
+    "meta_06": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_06/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_06/current",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": ["dism06.parquet", "julgadom06.parquet", "susm06.parquet"]
+        },
+        "variable_dimension_map": {
+            "dism06": 20,
+            "julgadom06": 21,
+            "susm06": 22
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 100"
+        },
+        "function": {
+            "case1": "sum(julgadom06) divide by the sum(sum(dism06 + desm06) - susm06)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    },
+    "meta_07": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_07/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_07/current",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": ["dism07.parquet", "julgadom07.parquet", "susm07.parquet"]
+        },
+        "variable_dimension_map": {
+            "dism07": 48,
+            "julgadom07": 49,
+            "susm07": 50
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 100"
+        },
+        "function": {
+            "case1": "sum(julgadom07) divide by the sum(sum(dism07 + desm07) - susm07)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    },
+    "meta_08": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_08/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_08/current",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": [ "dism08.parquet", "susm08.parquet", "desm08_ant.parquet", "julgadom08.parquet"]
+        },
+        "variable_dimension_map": {
+            "dism08": 27,
+            "julgadom08": 28,
+            "susm08": 29,
+            "desm08": 30,
+            "julgadom08_ant": 31,
+            "dism08_ant": 32,
+            "susm08_ant": 33
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 100"
+        },
+        "function": {
+            "case1": "sum(julgadom08) divide by the sum(sum(dism08 + desm08) - susm08)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    },
+    "meta_10": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_10/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_10/current",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": ["dism10.parquet", "susm10.parquet", "desm10_ant.parquet","julgadom10.parquet"]
+        },
+        "variable_dimension_map": {
+            "dism10": 34,
+            "julgadom10": 35,
+            "susm10": 36,
+            "desm10": 37,
+            "julgadom10_ant": 38,
+            "dism10_ant": 39,
+            "susm10_ant": 40
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 100"
+        },
+        "function": {
+            "case1": "sum(julgadom10) divide by the sum(sum(dism10 + desm10) - susm10)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    },
+    "meta_11": {
+        "paths": {
+            "ejud_path": "data/prata/ejud/meta_cnj2026/meta_11/current",
+            "eproc_path": "data/prata/eproc2g/meta_cnj2026/meta_11/current",
+            "export_path": "data/ouro/meta_cnj2026",
+            "t_processo": "data/bronze/ejud/t_processo",
+            "movimentorelator": "data/bronze/ejud/movimentorelator",
+            "dim_magistrado": "data/ouro/dim2inst/dim_magistrado"
+        },
+        "competencia": {
+            "2inst": [1,2,3,4,5,6,7,8,16,29,17,18,23,24,25,26,27,28],
+            "turmas": [10,11,14,15,20,19, 22]
+        },
+        "variables": {
+            "case1": ["dism11.parquet", "susm11.parquet", "desm11_ant.parquet", "julgadom11.parquet"]
+        },
+        "variable_dimension_map": {
+            "dism11": 41,
+            "julgadom11": 42,
+            "susm11": 43,
+            "desm11": 44,
+            "julgadom11_ant": 45,
+            "dism11_ant": 46,
+            "susm11_ant": 47
+        },
+        "description": {
+            "case1": "A meta estará cumprida quando o percentual for igual ou maior que 110"
+        },
+        "function": {
+            "case1": "sum(julgadom11) divide by the sum(sum(dism11 + desm11) - susm11)"
+        },
+        "ejud_num_processo": "num_processo.sql",
+        "columns_syntetic_report": [
+            "sistema", "cod_magistrado", "cod_orgao_julgador", "distribuidos", "desobrestados", "suspensos", "julgados", "denominador", "meta_percentual", "meta_cumprida", "indicador", "dth_referencia"
+        ],
+        "columns_analytic_report":[
+            "id_processo",
+            "num_processo",
+            "cod_magistrado",
+            "cod_orgao_julgador",
+            "id_classe_judicial",
+            "id_assunto_principal",
+            "cod_competencia",
+            "nivel_sigilo",
+            "sistema",
+            "dism",
+            "desm",
+            "julgadom",
+            "susm",
+            "dism_ant",
+            "julgadom_ant",
+            "susm_ant",
+            "desm_ant",
+            "dth_referencia",
+            "indicador"
+        ]
+    }
+}

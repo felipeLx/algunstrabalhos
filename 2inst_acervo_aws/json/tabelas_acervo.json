@@ -1,0 +1,31 @@
+{
+  "schema_nome": "ejud",
+  "tabelas": [
+    "assunto",
+    "autoassociado",
+    "competencia",
+    "complemento",
+    "fase",
+    "faseexterna",
+    "localvirtual",
+    "localfisico",
+    "localvirtualdocumento",
+    "movcancedistr",
+    "movdistribuicao",
+    "movimento",
+    "movimentofisico",
+    "movimentorelator",
+    "movsobrestamento",
+    "magistrado",
+    "orgaojulgador",
+    "parte",
+    "parteprocesso",
+    "pessoa",
+    "processoassunto",
+    "tipoeventomagistrado",
+    "tipoparte",
+    "tipoprocesso",
+    "logprocesso",
+    "vara"
+  ]
+}

@@ -1,0 +1,5108 @@
+[
+  {
+    "situacao": 2,
+    "explanation": "Arquivado definitivamente",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 246
+      }
+    ]
+  },
+  {
+    "situacao": 4,
+    "explanation": "Arquivado provisoriamente",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 245
+      },
+      {
+        "cod_mni_movimento": 14997
+      },
+      {
+        "cod_mni_movimento": 14998
+      }
+    ]
+  },
+  {
+    "situacao": 159,
+    "explanation": "Ato Infracional Iniciado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12035
+      }
+    ]
+  },
+  {
+    "situacao": 1,
+    "explanation": "Ato publicado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 92
+      }
+    ]
+  },
+  {
+    "situacao": 73,
+    "explanation": "Audiência conciliatória antecipada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 92
+      },
+      {
+        "cod_mni_movimento": 12624,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12740,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 12,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 12,
+        "complemento2": 92
+      }
+    ]
+  },
+  {
+    "situacao": 70,
+    "explanation": "Audiência conciliatória cancelada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 92
+      },
+      {
+        "cod_mni_movimento": 12624,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12740,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 11,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 11,
+        "complemento2": 92
+      }
+    ]
+  },
+  {
+    "situacao": 74,
+    "explanation": "Audiência conciliatória convertida em diligência",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 92
+      },
+      {
+        "cod_mni_movimento": 12624,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12740,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 13,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 15,
+        "complemento2": 92
+      }
+    ]
+  },
+  {
+    "situacao": 5,
+    "explanation": "Audiência conciliatória designada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 92
+      },
+      {
+        "cod_mni_movimento": 12624,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12740,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 9,
+        "complemento2": 92
+      }
+    ]
+  },
+  {
+    "situacao": 75,
+    "explanation": "Audiência conciliatória não realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 92
+      },
+      {
+        "cod_mni_movimento": 12624,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12740,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 9,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15569,
+        "complemento1": 14,
+        "complemento2": 92
+      }
+    ]
+  },
+  {
+    "situacao": 6,
+    "explanation": "Audiência conciliatória realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 92
+      },
+      {
+        "cod_mni_movimento": 12624,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12740,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 13,
+        "complemento2": 92
+      }
+    ]
+  },
+  {
+    "situacao": 76,
+    "explanation": "Audiência conciliatória redesignada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 17
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 92
+      },
+      {
+        "cod_mni_movimento": 12624,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12740,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12752,
+        "complemento1": 10,
+        "complemento2": 92
+      }
+    ]
+  },
+  {
+    "situacao": 164,
+    "explanation": "Audiência de acolhimento realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12741,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 184
+      }
+    ]
+  },
+  {
+    "situacao": 161,
+    "explanation": "Audiência de instrução realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 22
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 23
+      },
+      {
+        "cod_mni_movimento": 12749,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 13,
+        "complemento2": 23
+      }
+    ]
+  },
+  {
+    "situacao": 165,
+    "explanation": "Audiência de justificação realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 19
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 13,
+        "complemento2": 19
+      }
+    ]
+  },
+  {
+    "situacao": 162,
+    "explanation": "Audiência do art. 16 da Lei Maria da Penha realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 91
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 13,
+        "complemento2": 91
+      }
+    ]
+  },
+  {
+    "situacao": 77,
+    "explanation": "Audiência não conciliatória antecipada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 16
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 18
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 19
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 193
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 20
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 21
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 22
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 228
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 23
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 24
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 25
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 12,
+        "complemento2": 91
+      },
+      {
+        "cod_mni_movimento": 12739,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12741,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12742,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12743,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12746,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12747,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12749,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12751,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 14096,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 15050,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 15049,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 15045,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 15188,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 12
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 12,
+        "complemento2": 91
+      }
+    ]
+  },
+  {
+    "situacao": 71,
+    "explanation": "Audiência não conciliatória cancelada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 16
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 18
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 184
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 19
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 193
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 20
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 21
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 22
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 228
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 23
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 24
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 25
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 11,
+        "complemento2": 91
+      },
+      {
+        "cod_mni_movimento": 12739,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12741,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12742,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12743,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12746,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12747,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12749,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12751,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 14096,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 15050,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 15049,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 15045,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 15188,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 11
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 11,
+        "complemento2": 91
+      }
+    ]
+  },
+  {
+    "situacao": 78,
+    "explanation": "Audiência não conciliatória convertida em diligência",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 16
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 18
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 19
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 193
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 20
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 21
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 22
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 228
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 23
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 24
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 25
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 15,
+        "complemento2": 91
+      },
+      {
+        "cod_mni_movimento": 12739,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12741,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12742,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12743,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12746,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12747,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12749,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12751,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 14096,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 15050,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 15049,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 15045,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 15188,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 15
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 15,
+        "complemento2": 91
+      }
+    ]
+  },
+  {
+    "situacao": 7,
+    "explanation": "Audiência não conciliatória designada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 16
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 18
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 19
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 193
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 20
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 21
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 22
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 228
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 23
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 24
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 25
+      },
+      {
+        "cod_mni_movimento": 12739,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12741,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12742,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12743,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12746,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12747,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12749,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12751,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 14096,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 9,
+        "complemento2": 91
+      },
+      {
+        "cod_mni_movimento": 15050,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 15049,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 15045,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 15188,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 9
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 9,
+        "complemento2": 91
+      }
+    ]
+  },
+  {
+    "situacao": 79,
+    "explanation": "Audiência não conciliatória não realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 16
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 18
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 19
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 193
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 20
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 21
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 22
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 228
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 23
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 24
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 25
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 14,
+        "complemento2": 91
+      },
+      {
+        "cod_mni_movimento": 12739,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12741,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12742,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12743,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12746,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12747,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12749,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12751,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 14096,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15050,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15049,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15045,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15188,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 14
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 14,
+        "complemento2": 91
+      }
+    ]
+  },
+  {
+    "situacao": 8,
+    "explanation": "Audiência não conciliatória realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 16
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 18
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 193
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 20
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 21
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 228
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 24
+      },
+      {
+        "cod_mni_movimento": 12739,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12742,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12743,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12746,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12747,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12751,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 14096,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 15050,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 15049,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 15045,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 15188,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 13,
+        "complemento2": 24
+      }
+    ]
+  },
+  {
+    "situacao": 80,
+    "explanation": "Audiência não conciliatória redesignada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 16
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 18
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 19
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 193
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 20
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 21
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 22
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 228
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 23
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 24
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 25
+      },
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 10,
+        "complemento2": 91
+      },
+      {
+        "cod_mni_movimento": 12739,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12741,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12742,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12743,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12744,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12745,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12746,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12747,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12749,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12750,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12751,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 14096,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 15050,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 15049,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 15045,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 15188,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 10
+      },
+      {
+        "cod_mni_movimento": 15427,
+        "complemento1": 10,
+        "complemento2": 91
+      }
+    ]
+  },
+  {
+    "situacao": 163,
+    "explanation": "Audiência preliminar realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 970,
+        "complemento1": 13,
+        "complemento2": 25
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 13
+      },
+      {
+        "cod_mni_movimento": 12753,
+        "complemento1": 13,
+        "complemento2": 25
+      }
+    ]
+  },
+  {
+    "situacao": 110,
+    "explanation": "Autos físicos convertidos em eletrônicos",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14732
+      }
+    ]
+  },
+  {
+    "situacao": 10,
+    "explanation": "Baixado definitivamente",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 22
+      }
+    ]
+  },
+  {
+    "situacao": 109,
+    "explanation": "Bem/dinheiro depositado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12295
+      }
+    ]
+  },
+  {
+    "situacao": 13,
+    "explanation": "Cálculo efetuado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 16
+      },
+      {
+        "cod_mni_movimento": 478
+      },
+      {
+        "cod_mni_movimento": 479
+      },
+      {
+        "cod_mni_movimento": 480
+      },
+      {
+        "cod_mni_movimento": 481
+      }
+    ]
+  },
+  {
+    "situacao": 157,
+    "explanation": "Cancelamento de Movimentação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12291
+      }
+    ]
+  },
+  {
+    "situacao": 11,
+    "explanation": "Carta devolvida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 39
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 39
+      }
+    ]
+  },
+  {
+    "situacao": 81,
+    "explanation": "Classe evoluida para ação penal",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 283
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 10943
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 10944
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 293
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 294
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 295
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 297
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 300
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 302
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 289
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 288
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 287
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 11037
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1033
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 299
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 290
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1317
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 11528
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 283
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 10943
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 10944
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 293
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 294
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 295
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 297
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 300
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 302
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 289
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 288
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 287
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 11037
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1033
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 299
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 290
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1317
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 11528
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 282
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 282
+      }
+    ]
+  },
+  {
+    "situacao": 160,
+    "explanation": "Classe evoluida para ato infracional",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1464
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1464
+      }
+    ]
+  },
+  {
+    "situacao": 156,
+    "explanation": "Classe processual evoluída",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 10966
+      },
+      {
+        "cod_mni_movimento": 14739
+      }
+    ]
+  },
+  {
+    "situacao": 133,
+    "explanation": "Classe processual retificada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14738
+      }
+    ]
+  },
+  {
+    "situacao": 108,
+    "explanation": "Comparecimento do réu",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12294
+      }
+    ]
+  },
+  {
+    "situacao": 90,
+    "explanation": "Concedida a recuperação judicial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12041
+      }
+    ]
+  },
+  {
+    "situacao": 136,
+    "explanation": "Conclusão cancelada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15101
+      }
+    ]
+  },
+  {
+    "situacao": 12,
+    "explanation": "Concluso",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 51
+      }
+    ]
+  },
+  {
+    "situacao": 69,
+    "explanation": "Concluso para admissibilidade recursal",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 51,
+        "complemento1": 189
+      },
+      {
+        "cod_mni_movimento": 51
+      }
+    ]
+  },
+  {
+    "situacao": 67,
+    "explanation": "Concluso para decisão",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 51,
+        "complemento1": 6
+      },
+      {
+        "cod_mni_movimento": 51
+      }
+    ]
+  },
+  {
+    "situacao": 66,
+    "explanation": "Concluso para despacho",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 51,
+        "complemento1": 5
+      },
+      {
+        "cod_mni_movimento": 51
+      }
+    ]
+  },
+  {
+    "situacao": 68,
+    "explanation": "Concluso para julgamento",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 51,
+        "complemento1": 36
+      },
+      {
+        "cod_mni_movimento": 51
+      }
+    ]
+  },
+  {
+    "situacao": 166,
+    "explanation": "Cooperação Judiciária",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15186
+      },
+      {
+        "cod_mni_movimento": 15185
+      }
+    ]
+  },
+  {
+    "situacao": 14,
+    "explanation": "Decisão denegatória de admissibilidade proferida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 434
+      },
+      {
+        "cod_mni_movimento": 12456
+      }
+    ]
+  },
+  {
+    "situacao": 15,
+    "explanation": "Decisão em embargos de declaração proferida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 198
+      },
+      {
+        "cod_mni_movimento": 200
+      },
+      {
+        "cod_mni_movimento": 871
+      },
+      {
+        "cod_mni_movimento": 15162
+      },
+      {
+        "cod_mni_movimento": 15163
+      },
+      {
+        "cod_mni_movimento": 15164
+      },
+      {
+        "cod_mni_movimento": 15409
+      },
+      {
+        "cod_mni_movimento": 15408
+      }
+    ]
+  },
+  {
+    "situacao": 16,
+    "explanation": "Decisão homologatória proferida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 377
+      },
+      {
+        "cod_mni_movimento": 12733
+      }
+    ]
+  },
+  {
+    "situacao": 17,
+    "explanation": "Decisão proferida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15203
+      },
+      {
+        "cod_mni_movimento": 3
+      },
+      {
+        "cod_mni_movimento": 7
+      },
+      {
+        "cod_mni_movimento": 11
+      },
+      {
+        "cod_mni_movimento": 56
+      },
+      {
+        "cod_mni_movimento": 63
+      },
+      {
+        "cod_mni_movimento": 83
+      },
+      {
+        "cod_mni_movimento": 108
+      },
+      {
+        "cod_mni_movimento": 113
+      },
+      {
+        "cod_mni_movimento": 117
+      },
+      {
+        "cod_mni_movimento": 122
+      },
+      {
+        "cod_mni_movimento": 133
+      },
+      {
+        "cod_mni_movimento": 138
+      },
+      {
+        "cod_mni_movimento": 146
+      },
+      {
+        "cod_mni_movimento": 151
+      },
+      {
+        "cod_mni_movimento": 157
+      },
+      {
+        "cod_mni_movimento": 160
+      },
+      {
+        "cod_mni_movimento": 163
+      },
+      {
+        "cod_mni_movimento": 172
+      },
+      {
+        "cod_mni_movimento": 190
+      },
+      {
+        "cod_mni_movimento": 206
+      },
+      {
+        "cod_mni_movimento": 207
+      },
+      {
+        "cod_mni_movimento": 378
+      },
+      {
+        "cod_mni_movimento": 817
+      },
+      {
+        "cod_mni_movimento": 888
+      },
+      {
+        "cod_mni_movimento": 961
+      },
+      {
+        "cod_mni_movimento": 968
+      },
+      {
+        "cod_mni_movimento": 1008
+      },
+      {
+        "cod_mni_movimento": 1013
+      },
+      {
+        "cod_mni_movimento": 12092
+      },
+      {
+        "cod_mni_movimento": 12093
+      },
+      {
+        "cod_mni_movimento": 12141
+      },
+      {
+        "cod_mni_movimento": 12144
+      },
+      {
+        "cod_mni_movimento": 12163
+      },
+      {
+        "cod_mni_movimento": 12164
+      },
+      {
+        "cod_mni_movimento": 12185
+      },
+      {
+        "cod_mni_movimento": 12206
+      },
+      {
+        "cod_mni_movimento": 12208
+      },
+      {
+        "cod_mni_movimento": 12210
+      },
+      {
+        "cod_mni_movimento": 12299
+      },
+      {
+        "cod_mni_movimento": 12300
+      },
+      {
+        "cod_mni_movimento": 12307
+      },
+      {
+        "cod_mni_movimento": 12318
+      },
+      {
+        "cod_mni_movimento": 12320
+      },
+      {
+        "cod_mni_movimento": 12332
+      },
+      {
+        "cod_mni_movimento": 12359
+      },
+      {
+        "cod_mni_movimento": 12387
+      },
+      {
+        "cod_mni_movimento": 12425
+      },
+      {
+        "cod_mni_movimento": 12432
+      },
+      {
+        "cod_mni_movimento": 12444
+      },
+      {
+        "cod_mni_movimento": 12455
+      },
+      {
+        "cod_mni_movimento": 12477
+      },
+      {
+        "cod_mni_movimento": 12647
+      },
+      {
+        "cod_mni_movimento": 12736
+      },
+      {
+        "cod_mni_movimento": 12765
+      },
+      {
+        "cod_mni_movimento": 12768
+      },
+      {
+        "cod_mni_movimento": 12769
+      },
+      {
+        "cod_mni_movimento": 14230
+      },
+      {
+        "cod_mni_movimento": 14231
+      },
+      {
+        "cod_mni_movimento": 14681
+      },
+      {
+        "cod_mni_movimento": 128
+      },
+      {
+        "cod_mni_movimento": 175
+      },
+      {
+        "cod_mni_movimento": 266
+      },
+      {
+        "cod_mni_movimento": 269
+      },
+      {
+        "cod_mni_movimento": 335
+      },
+      {
+        "cod_mni_movimento": 347
+      },
+      {
+        "cod_mni_movimento": 348
+      },
+      {
+        "cod_mni_movimento": 352
+      },
+      {
+        "cod_mni_movimento": 353
+      },
+      {
+        "cod_mni_movimento": 354
+      },
+      {
+        "cod_mni_movimento": 355
+      },
+      {
+        "cod_mni_movimento": 357
+      },
+      {
+        "cod_mni_movimento": 358
+      },
+      {
+        "cod_mni_movimento": 371
+      },
+      {
+        "cod_mni_movimento": 373
+      },
+      {
+        "cod_mni_movimento": 374
+      },
+      {
+        "cod_mni_movimento": 381
+      },
+      {
+        "cod_mni_movimento": 383
+      },
+      {
+        "cod_mni_movimento": 388
+      },
+      {
+        "cod_mni_movimento": 389
+      },
+      {
+        "cod_mni_movimento": 390
+      },
+      {
+        "cod_mni_movimento": 392
+      },
+      {
+        "cod_mni_movimento": 399
+      },
+      {
+        "cod_mni_movimento": 400
+      },
+      {
+        "cod_mni_movimento": 429
+      },
+      {
+        "cod_mni_movimento": 430
+      },
+      {
+        "cod_mni_movimento": 431
+      },
+      {
+        "cod_mni_movimento": 432
+      },
+      {
+        "cod_mni_movimento": 433
+      },
+      {
+        "cod_mni_movimento": 788
+      },
+      {
+        "cod_mni_movimento": 799
+      },
+      {
+        "cod_mni_movimento": 803
+      },
+      {
+        "cod_mni_movimento": 804
+      },
+      {
+        "cod_mni_movimento": 818
+      },
+      {
+        "cod_mni_movimento": 819
+      },
+      {
+        "cod_mni_movimento": 821
+      },
+      {
+        "cod_mni_movimento": 823
+      },
+      {
+        "cod_mni_movimento": 824
+      },
+      {
+        "cod_mni_movimento": 905
+      },
+      {
+        "cod_mni_movimento": 940
+      },
+      {
+        "cod_mni_movimento": 941
+      },
+      {
+        "cod_mni_movimento": 944
+      },
+      {
+        "cod_mni_movimento": 945
+      },
+      {
+        "cod_mni_movimento": 988
+      },
+      {
+        "cod_mni_movimento": 990
+      },
+      {
+        "cod_mni_movimento": 1002
+      },
+      {
+        "cod_mni_movimento": 1003
+      },
+      {
+        "cod_mni_movimento": 1004
+      },
+      {
+        "cod_mni_movimento": 1009
+      },
+      {
+        "cod_mni_movimento": 1010
+      },
+      {
+        "cod_mni_movimento": 1011
+      },
+      {
+        "cod_mni_movimento": 1014
+      },
+      {
+        "cod_mni_movimento": 1015
+      },
+      {
+        "cod_mni_movimento": 1016
+      },
+      {
+        "cod_mni_movimento": 1018
+      },
+      {
+        "cod_mni_movimento": 1019
+      },
+      {
+        "cod_mni_movimento": 1060
+      },
+      {
+        "cod_mni_movimento": 10962
+      },
+      {
+        "cod_mni_movimento": 10963
+      },
+      {
+        "cod_mni_movimento": 11002
+      },
+      {
+        "cod_mni_movimento": 11011
+      },
+      {
+        "cod_mni_movimento": 11382
+      },
+      {
+        "cod_mni_movimento": 11393
+      },
+      {
+        "cod_mni_movimento": 11395
+      },
+      {
+        "cod_mni_movimento": 11415
+      },
+      {
+        "cod_mni_movimento": 11423
+      },
+      {
+        "cod_mni_movimento": 11424
+      },
+      {
+        "cod_mni_movimento": 11425
+      },
+      {
+        "cod_mni_movimento": 11426
+      },
+      {
+        "cod_mni_movimento": 11554
+      },
+      {
+        "cod_mni_movimento": 12033
+      },
+      {
+        "cod_mni_movimento": 12034
+      },
+      {
+        "cod_mni_movimento": 12036
+      },
+      {
+        "cod_mni_movimento": 12037
+      },
+      {
+        "cod_mni_movimento": 12038
+      },
+      {
+        "cod_mni_movimento": 12039
+      },
+      {
+        "cod_mni_movimento": 12040
+      },
+      {
+        "cod_mni_movimento": 12094
+      },
+      {
+        "cod_mni_movimento": 12095
+      },
+      {
+        "cod_mni_movimento": 12096
+      },
+      {
+        "cod_mni_movimento": 12097
+      },
+      {
+        "cod_mni_movimento": 12140
+      },
+      {
+        "cod_mni_movimento": 12145
+      },
+      {
+        "cod_mni_movimento": 12146
+      },
+      {
+        "cod_mni_movimento": 12147
+      },
+      {
+        "cod_mni_movimento": 12148
+      },
+      {
+        "cod_mni_movimento": 12149
+      },
+      {
+        "cod_mni_movimento": 12150
+      },
+      {
+        "cod_mni_movimento": 12151
+      },
+      {
+        "cod_mni_movimento": 12188
+      },
+      {
+        "cod_mni_movimento": 12207
+      },
+      {
+        "cod_mni_movimento": 12209
+      },
+      {
+        "cod_mni_movimento": 12211
+      },
+      {
+        "cod_mni_movimento": 12213
+      },
+      {
+        "cod_mni_movimento": 12255
+      },
+      {
+        "cod_mni_movimento": 12261
+      },
+      {
+        "cod_mni_movimento": 12262
+      },
+      {
+        "cod_mni_movimento": 12301
+      },
+      {
+        "cod_mni_movimento": 12302
+      },
+      {
+        "cod_mni_movimento": 12303
+      },
+      {
+        "cod_mni_movimento": 12304
+      },
+      {
+        "cod_mni_movimento": 12305
+      },
+      {
+        "cod_mni_movimento": 12306
+      },
+      {
+        "cod_mni_movimento": 12308
+      },
+      {
+        "cod_mni_movimento": 12421
+      },
+      {
+        "cod_mni_movimento": 12422
+      },
+      {
+        "cod_mni_movimento": 12427
+      },
+      {
+        "cod_mni_movimento": 12428
+      },
+      {
+        "cod_mni_movimento": 12429
+      },
+      {
+        "cod_mni_movimento": 12430
+      },
+      {
+        "cod_mni_movimento": 12431
+      },
+      {
+        "cod_mni_movimento": 12445
+      },
+      {
+        "cod_mni_movimento": 12446
+      },
+      {
+        "cod_mni_movimento": 12447
+      },
+      {
+        "cod_mni_movimento": 12448
+      },
+      {
+        "cod_mni_movimento": 12454
+      },
+      {
+        "cod_mni_movimento": 12457
+      },
+      {
+        "cod_mni_movimento": 12467
+      },
+      {
+        "cod_mni_movimento": 12472
+      },
+      {
+        "cod_mni_movimento": 12473
+      },
+      {
+        "cod_mni_movimento": 12474
+      },
+      {
+        "cod_mni_movimento": 12646
+      },
+      {
+        "cod_mni_movimento": 12648
+      },
+      {
+        "cod_mni_movimento": 12734
+      },
+      {
+        "cod_mni_movimento": 12737
+      },
+      {
+        "cod_mni_movimento": 12766
+      },
+      {
+        "cod_mni_movimento": 12767
+      },
+      {
+        "cod_mni_movimento": 14232
+      },
+      {
+        "cod_mni_movimento": 14233
+      },
+      {
+        "cod_mni_movimento": 14234
+      },
+      {
+        "cod_mni_movimento": 14235
+      },
+      {
+        "cod_mni_movimento": 14682
+      },
+      {
+        "cod_mni_movimento": 14683
+      },
+      {
+        "cod_mni_movimento": 394
+      },
+      {
+        "cod_mni_movimento": 1059
+      },
+      {
+        "cod_mni_movimento": 12180
+      },
+      {
+        "cod_mni_movimento": 12181
+      },
+      {
+        "cod_mni_movimento": 12182
+      },
+      {
+        "cod_mni_movimento": 12183
+      },
+      {
+        "cod_mni_movimento": 14730
+      },
+      {
+        "cod_mni_movimento": 14733
+      },
+      {
+        "cod_mni_movimento": 14776
+      },
+      {
+        "cod_mni_movimento": 14777
+      },
+      {
+        "cod_mni_movimento": 14778
+      },
+      {
+        "cod_mni_movimento": 15032
+      },
+      {
+        "cod_mni_movimento": 15205
+      },
+      {
+        "cod_mni_movimento": 15061
+      },
+      {
+        "cod_mni_movimento": 15062
+      },
+      {
+        "cod_mni_movimento": 15063
+      },
+      {
+        "cod_mni_movimento": 15064
+      },
+      {
+        "cod_mni_movimento": 15065
+      },
+      {
+        "cod_mni_movimento": 15078
+      },
+      {
+        "cod_mni_movimento": 15079
+      },
+      {
+        "cod_mni_movimento": 15080
+      },
+      {
+        "cod_mni_movimento": 15081
+      },
+      {
+        "cod_mni_movimento": 15082
+      },
+      {
+        "cod_mni_movimento": 15083
+      },
+      {
+        "cod_mni_movimento": 15084
+      },
+      {
+        "cod_mni_movimento": 15085
+      },
+      {
+        "cod_mni_movimento": 15086
+      },
+      {
+        "cod_mni_movimento": 1017
+      },
+      {
+        "cod_mni_movimento": 15206
+      },
+      {
+        "cod_mni_movimento": 15207
+      },
+      {
+        "cod_mni_movimento": 15208
+      },
+      {
+        "cod_mni_movimento": 15209
+      },
+      {
+        "cod_mni_movimento": 15210
+      },
+      {
+        "cod_mni_movimento": 15223
+      },
+      {
+        "cod_mni_movimento": 15229
+      },
+      {
+        "cod_mni_movimento": 15230
+      },
+      {
+        "cod_mni_movimento": 15231
+      },
+      {
+        "cod_mni_movimento": 15232
+      },
+      {
+        "cod_mni_movimento": 15233
+      },
+      {
+        "cod_mni_movimento": 15234
+      },
+      {
+        "cod_mni_movimento": 15235
+      },
+      {
+        "cod_mni_movimento": 15244
+      },
+      {
+        "cod_mni_movimento": 15366
+      },
+      {
+        "cod_mni_movimento": 15510
+      },
+      {
+        "cod_mni_movimento": 15509
+      },
+      {
+        "cod_mni_movimento": 15508
+      },
+      {
+        "cod_mni_movimento": 15507
+      },
+      {
+        "cod_mni_movimento": 15506
+      },
+      {
+        "cod_mni_movimento": 15505
+      },
+      {
+        "cod_mni_movimento": 15504
+      },
+      {
+        "cod_mni_movimento": 15503
+      },
+      {
+        "cod_mni_movimento": 15502
+      },
+      {
+        "cod_mni_movimento": 15501
+      },
+      {
+        "cod_mni_movimento": 15500
+      },
+      {
+        "cod_mni_movimento": 15499
+      },
+      {
+        "cod_mni_movimento": 15498
+      },
+      {
+        "cod_mni_movimento": 15497
+      },
+      {
+        "cod_mni_movimento": 15496
+      },
+      {
+        "cod_mni_movimento": 15495
+      },
+      {
+        "cod_mni_movimento": 15494
+      },
+      {
+        "cod_mni_movimento": 15493
+      },
+      {
+        "cod_mni_movimento": 15492
+      },
+      {
+        "cod_mni_movimento": 15491
+      },
+      {
+        "cod_mni_movimento": 15490
+      },
+      {
+        "cod_mni_movimento": 15489
+      },
+      {
+        "cod_mni_movimento": 15488
+      },
+      {
+        "cod_mni_movimento": 15487
+      },
+      {
+        "cod_mni_movimento": 15486
+      },
+      {
+        "cod_mni_movimento": 15426
+      },
+      {
+        "cod_mni_movimento": 15424
+      },
+      {
+        "cod_mni_movimento": 15421
+      },
+      {
+        "cod_mni_movimento": 15420
+      },
+      {
+        "cod_mni_movimento": 15419
+      },
+      {
+        "cod_mni_movimento": 15418
+      },
+      {
+        "cod_mni_movimento": 15538
+      },
+      {
+        "cod_mni_movimento": 15539
+      },
+      {
+        "cod_mni_movimento": 15540
+      },
+      {
+        "cod_mni_movimento": 15202
+      },
+      {
+        "cod_mni_movimento": 15200
+      },
+      {
+        "cod_mni_movimento": 15201
+      },
+      {
+        "cod_mni_movimento": 15541
+      },
+      {
+        "cod_mni_movimento": 15542
+      },
+      {
+        "cod_mni_movimento": 15579
+      },
+      {
+        "cod_mni_movimento": 15580
+      },
+      {
+        "cod_mni_movimento": 15581
+      },
+      {
+        "cod_mni_movimento": 15582
+      },
+      {
+        "cod_mni_movimento": 15583
+      },
+      {
+        "cod_mni_movimento": 15587
+      },
+      {
+        "cod_mni_movimento": 15589
+      }
+    ]
+  },
+  {
+    "situacao": 18,
+    "explanation": "Decretada a falência",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 202
+      }
+    ]
+  },
+  {
+    "situacao": 9,
+    "explanation": "Denúncia/queixa recebida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 391
+      },
+      {
+        "cod_mni_movimento": 393
+      }
+    ]
+  },
+  {
+    "situacao": 19,
+    "explanation": "Denúncia/queixa rejeitada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 402
+      },
+      {
+        "cod_mni_movimento": 404
+      }
+    ]
+  },
+  {
+    "situacao": 82,
+    "explanation": "Desarquivado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 893
+      }
+    ]
+  },
+  {
+    "situacao": 21,
+    "explanation": "Despacho proferido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 11009
+      },
+      {
+        "cod_mni_movimento": 11010
+      },
+      {
+        "cod_mni_movimento": 11019
+      },
+      {
+        "cod_mni_movimento": 11020
+      },
+      {
+        "cod_mni_movimento": 11021
+      },
+      {
+        "cod_mni_movimento": 12311
+      },
+      {
+        "cod_mni_movimento": 12312
+      },
+      {
+        "cod_mni_movimento": 12313
+      },
+      {
+        "cod_mni_movimento": 12314
+      },
+      {
+        "cod_mni_movimento": 11022
+      },
+      {
+        "cod_mni_movimento": 12310
+      },
+      {
+        "cod_mni_movimento": 11023
+      },
+      {
+        "cod_mni_movimento": 12449
+      },
+      {
+        "cod_mni_movimento": 12548
+      },
+      {
+        "cod_mni_movimento": 15216
+      },
+      {
+        "cod_mni_movimento": 15225
+      },
+      {
+        "cod_mni_movimento": 15226
+      },
+      {
+        "cod_mni_movimento": 15227
+      },
+      {
+        "cod_mni_movimento": 15561
+      },
+      {
+        "cod_mni_movimento": 15562
+      },
+      {
+        "cod_mni_movimento": 15563
+      },
+      {
+        "cod_mni_movimento": 15564
+      },
+      {
+        "cod_mni_movimento": 15565
+      }
+    ]
+  },
+  {
+    "situacao": 145,
+    "explanation": "Destaque para Julgamento Presencial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15021
+      }
+    ]
+  },
+  {
+    "situacao": 3,
+    "explanation": "Determinado arquivamento do procedimento investigatório",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 1063
+      }
+    ]
+  },
+  {
+    "situacao": 64,
+    "explanation": "Devolvido da carga/vista",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12315
+      }
+    ]
+  },
+  {
+    "situacao": 22,
+    "explanation": "Devolvido da vista",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14091
+      }
+    ]
+  },
+  {
+    "situacao": 53,
+    "explanation": "Disponibilizado no DJE",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 1061
+      }
+    ]
+  },
+  {
+    "situacao": 23,
+    "explanation": "Distribuição cancelada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 488
+      },
+      {
+        "cod_mni_movimento": 12186
+      }
+    ]
+  },
+  {
+    "situacao": 24,
+    "explanation": "Distribuído",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 26
+      }
+    ]
+  },
+  {
+    "situacao": 63,
+    "explanation": "Entregue em carga/vista",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 493
+      }
+    ]
+  },
+  {
+    "situacao": 115,
+    "explanation": "Excluído do juízo 100% digital",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14737
+      }
+    ]
+  },
+  {
+    "situacao": 26,
+    "explanation": "Execução não criminal iniciada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 12078
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 12246
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 151
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 152
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 156
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 52
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 152
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 12078
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 12246
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 151
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 156
+      }
+    ]
+  },
+  {
+    "situacao": 117,
+    "explanation": "Finalizada tramitação direta entre MP e autoridade policial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15000
+      }
+    ]
+  },
+  {
+    "situacao": 113,
+    "explanation": "Finalizado o cumprimento da pena",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12278
+      },
+      {
+        "cod_mni_movimento": 12279
+      }
+    ]
+  },
+  {
+    "situacao": 114,
+    "explanation": "Incluído no juízo 100% digital",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14736
+      }
+    ]
+  },
+  {
+    "situacao": 116,
+    "explanation": "Iniciada tramitação direta entre MP e autoridade policial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14999
+      }
+    ]
+  },
+  {
+    "situacao": 111,
+    "explanation": "Iniciado o cumprimento da pena",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12277
+      }
+    ]
+  },
+  {
+    "situacao": 54,
+    "explanation": "Iniciado o cumprimento da transação penal",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 11003
+      }
+    ]
+  },
+  {
+    "situacao": 112,
+    "explanation": "Interrompido o cumprimento da pena",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12280
+      }
+    ]
+  },
+  {
+    "situacao": 62,
+    "explanation": "Julgado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 193
+      }
+    ]
+  },
+  {
+    "situacao": 27,
+    "explanation": "Julgado com resolução do mérito",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15322
+      },
+      {
+        "cod_mni_movimento": 12187
+      },
+      {
+        "cod_mni_movimento": 385
+      },
+      {
+        "cod_mni_movimento": 196
+      },
+      {
+        "cod_mni_movimento": 208
+      },
+      {
+        "cod_mni_movimento": 210
+      },
+      {
+        "cod_mni_movimento": 212
+      },
+      {
+        "cod_mni_movimento": 214
+      },
+      {
+        "cod_mni_movimento": 219
+      },
+      {
+        "cod_mni_movimento": 220
+      },
+      {
+        "cod_mni_movimento": 221
+      },
+      {
+        "cod_mni_movimento": 237
+      },
+      {
+        "cod_mni_movimento": 238
+      },
+      {
+        "cod_mni_movimento": 239
+      },
+      {
+        "cod_mni_movimento": 240
+      },
+      {
+        "cod_mni_movimento": 241
+      },
+      {
+        "cod_mni_movimento": 242
+      },
+      {
+        "cod_mni_movimento": 455
+      },
+      {
+        "cod_mni_movimento": 471
+      },
+      {
+        "cod_mni_movimento": 900
+      },
+      {
+        "cod_mni_movimento": 901
+      },
+      {
+        "cod_mni_movimento": 972
+      },
+      {
+        "cod_mni_movimento": 973
+      },
+      {
+        "cod_mni_movimento": 10964
+      },
+      {
+        "cod_mni_movimento": 11401
+      },
+      {
+        "cod_mni_movimento": 11402
+      },
+      {
+        "cod_mni_movimento": 11403
+      },
+      {
+        "cod_mni_movimento": 11404
+      },
+      {
+        "cod_mni_movimento": 11405
+      },
+      {
+        "cod_mni_movimento": 11406
+      },
+      {
+        "cod_mni_movimento": 11407
+      },
+      {
+        "cod_mni_movimento": 11408
+      },
+      {
+        "cod_mni_movimento": 11409
+      },
+      {
+        "cod_mni_movimento": 11795
+      },
+      {
+        "cod_mni_movimento": 11796
+      },
+      {
+        "cod_mni_movimento": 11876
+      },
+      {
+        "cod_mni_movimento": 11877
+      },
+      {
+        "cod_mni_movimento": 12252
+      },
+      {
+        "cod_mni_movimento": 12253
+      },
+      {
+        "cod_mni_movimento": 12254
+      },
+      {
+        "cod_mni_movimento": 12257
+      },
+      {
+        "cod_mni_movimento": 12258
+      },
+      {
+        "cod_mni_movimento": 12321
+      },
+      {
+        "cod_mni_movimento": 12326
+      },
+      {
+        "cod_mni_movimento": 12329
+      },
+      {
+        "cod_mni_movimento": 12330
+      },
+      {
+        "cod_mni_movimento": 12331
+      },
+      {
+        "cod_mni_movimento": 12433
+      },
+      {
+        "cod_mni_movimento": 12450
+      },
+      {
+        "cod_mni_movimento": 12615
+      },
+      {
+        "cod_mni_movimento": 12649
+      },
+      {
+        "cod_mni_movimento": 12650
+      },
+      {
+        "cod_mni_movimento": 12651
+      },
+      {
+        "cod_mni_movimento": 12652
+      },
+      {
+        "cod_mni_movimento": 12653
+      },
+      {
+        "cod_mni_movimento": 12654
+      },
+      {
+        "cod_mni_movimento": 12661
+      },
+      {
+        "cod_mni_movimento": 12664
+      },
+      {
+        "cod_mni_movimento": 12665
+      },
+      {
+        "cod_mni_movimento": 12678
+      },
+      {
+        "cod_mni_movimento": 14219
+      },
+      {
+        "cod_mni_movimento": 442
+      },
+      {
+        "cod_mni_movimento": 443
+      },
+      {
+        "cod_mni_movimento": 444
+      },
+      {
+        "cod_mni_movimento": 445
+      },
+      {
+        "cod_mni_movimento": 446
+      },
+      {
+        "cod_mni_movimento": 447
+      },
+      {
+        "cod_mni_movimento": 448
+      },
+      {
+        "cod_mni_movimento": 449
+      },
+      {
+        "cod_mni_movimento": 450
+      },
+      {
+        "cod_mni_movimento": 451
+      },
+      {
+        "cod_mni_movimento": 452
+      },
+      {
+        "cod_mni_movimento": 453
+      },
+      {
+        "cod_mni_movimento": 1042
+      },
+      {
+        "cod_mni_movimento": 1043
+      },
+      {
+        "cod_mni_movimento": 1044
+      },
+      {
+        "cod_mni_movimento": 1045
+      },
+      {
+        "cod_mni_movimento": 1046
+      },
+      {
+        "cod_mni_movimento": 1047
+      },
+      {
+        "cod_mni_movimento": 1048
+      },
+      {
+        "cod_mni_movimento": 1049
+      },
+      {
+        "cod_mni_movimento": 1050
+      },
+      {
+        "cod_mni_movimento": 10965
+      },
+      {
+        "cod_mni_movimento": 11411
+      },
+      {
+        "cod_mni_movimento": 11801
+      },
+      {
+        "cod_mni_movimento": 11878
+      },
+      {
+        "cod_mni_movimento": 11879
+      },
+      {
+        "cod_mni_movimento": 12032
+      },
+      {
+        "cod_mni_movimento": 12322
+      },
+      {
+        "cod_mni_movimento": 12323
+      },
+      {
+        "cod_mni_movimento": 12324
+      },
+      {
+        "cod_mni_movimento": 12327
+      },
+      {
+        "cod_mni_movimento": 12328
+      },
+      {
+        "cod_mni_movimento": 12434
+      },
+      {
+        "cod_mni_movimento": 12435
+      },
+      {
+        "cod_mni_movimento": 12436
+      },
+      {
+        "cod_mni_movimento": 12437
+      },
+      {
+        "cod_mni_movimento": 12438
+      },
+      {
+        "cod_mni_movimento": 12439
+      },
+      {
+        "cod_mni_movimento": 12440
+      },
+      {
+        "cod_mni_movimento": 12441
+      },
+      {
+        "cod_mni_movimento": 12442
+      },
+      {
+        "cod_mni_movimento": 12443
+      },
+      {
+        "cod_mni_movimento": 12451
+      },
+      {
+        "cod_mni_movimento": 12452
+      },
+      {
+        "cod_mni_movimento": 12453
+      },
+      {
+        "cod_mni_movimento": 12475
+      },
+      {
+        "cod_mni_movimento": 12616
+      },
+      {
+        "cod_mni_movimento": 12660
+      },
+      {
+        "cod_mni_movimento": 12662
+      },
+      {
+        "cod_mni_movimento": 12663
+      },
+      {
+        "cod_mni_movimento": 12666
+      },
+      {
+        "cod_mni_movimento": 12667
+      },
+      {
+        "cod_mni_movimento": 12668
+      },
+      {
+        "cod_mni_movimento": 12669
+      },
+      {
+        "cod_mni_movimento": 12670
+      },
+      {
+        "cod_mni_movimento": 12672
+      },
+      {
+        "cod_mni_movimento": 12673
+      },
+      {
+        "cod_mni_movimento": 12674
+      },
+      {
+        "cod_mni_movimento": 12675
+      },
+      {
+        "cod_mni_movimento": 12676
+      },
+      {
+        "cod_mni_movimento": 12677
+      },
+      {
+        "cod_mni_movimento": 12679
+      },
+      {
+        "cod_mni_movimento": 12680
+      },
+      {
+        "cod_mni_movimento": 12681
+      },
+      {
+        "cod_mni_movimento": 12682
+      },
+      {
+        "cod_mni_movimento": 12683
+      },
+      {
+        "cod_mni_movimento": 12684
+      },
+      {
+        "cod_mni_movimento": 12685
+      },
+      {
+        "cod_mni_movimento": 12686
+      },
+      {
+        "cod_mni_movimento": 12687
+      },
+      {
+        "cod_mni_movimento": 12688
+      },
+      {
+        "cod_mni_movimento": 12689
+      },
+      {
+        "cod_mni_movimento": 12690
+      },
+      {
+        "cod_mni_movimento": 12691
+      },
+      {
+        "cod_mni_movimento": 12692
+      },
+      {
+        "cod_mni_movimento": 12693
+      },
+      {
+        "cod_mni_movimento": 12694
+      },
+      {
+        "cod_mni_movimento": 12695
+      },
+      {
+        "cod_mni_movimento": 12696
+      },
+      {
+        "cod_mni_movimento": 12697
+      },
+      {
+        "cod_mni_movimento": 12698
+      },
+      {
+        "cod_mni_movimento": 12699
+      },
+      {
+        "cod_mni_movimento": 12700
+      },
+      {
+        "cod_mni_movimento": 12701
+      },
+      {
+        "cod_mni_movimento": 12702
+      },
+      {
+        "cod_mni_movimento": 12703
+      },
+      {
+        "cod_mni_movimento": 12704
+      },
+      {
+        "cod_mni_movimento": 12705
+      },
+      {
+        "cod_mni_movimento": 12706
+      },
+      {
+        "cod_mni_movimento": 12707
+      },
+      {
+        "cod_mni_movimento": 12708
+      },
+      {
+        "cod_mni_movimento": 12735
+      },
+      {
+        "cod_mni_movimento": 12792
+      },
+      {
+        "cod_mni_movimento": 14210
+      },
+      {
+        "cod_mni_movimento": 14211
+      },
+      {
+        "cod_mni_movimento": 14213
+      },
+      {
+        "cod_mni_movimento": 14214
+      },
+      {
+        "cod_mni_movimento": 14215
+      },
+      {
+        "cod_mni_movimento": 14216
+      },
+      {
+        "cod_mni_movimento": 14217
+      },
+      {
+        "cod_mni_movimento": 14680
+      },
+      {
+        "cod_mni_movimento": 12671
+      },
+      {
+        "cod_mni_movimento": 14937
+      },
+      {
+        "cod_mni_movimento": 15030
+      },
+      {
+        "cod_mni_movimento": 15029
+      },
+      {
+        "cod_mni_movimento": 15028
+      },
+      {
+        "cod_mni_movimento": 15027
+      },
+      {
+        "cod_mni_movimento": 15026
+      },
+      {
+        "cod_mni_movimento": 15024
+      },
+      {
+        "cod_mni_movimento": 15022
+      },
+      {
+        "cod_mni_movimento": 15023
+      },
+      {
+        "cod_mni_movimento": 15165
+      },
+      {
+        "cod_mni_movimento": 15166
+      },
+      {
+        "cod_mni_movimento": 15211
+      },
+      {
+        "cod_mni_movimento": 15212
+      },
+      {
+        "cod_mni_movimento": 15213
+      },
+      {
+        "cod_mni_movimento": 15214
+      },
+      {
+        "cod_mni_movimento": 15252
+      }
+    ]
+  },
+  {
+    "situacao": 28,
+    "explanation": "Julgado sem resolução do mérito",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 230
+      },
+      {
+        "cod_mni_movimento": 236
+      },
+      {
+        "cod_mni_movimento": 244
+      },
+      {
+        "cod_mni_movimento": 853
+      },
+      {
+        "cod_mni_movimento": 10961
+      },
+      {
+        "cod_mni_movimento": 11373
+      },
+      {
+        "cod_mni_movimento": 11394
+      },
+      {
+        "cod_mni_movimento": 11396
+      },
+      {
+        "cod_mni_movimento": 12319
+      },
+      {
+        "cod_mni_movimento": 12458
+      },
+      {
+        "cod_mni_movimento": 12459
+      },
+      {
+        "cod_mni_movimento": 454
+      },
+      {
+        "cod_mni_movimento": 457
+      },
+      {
+        "cod_mni_movimento": 458
+      },
+      {
+        "cod_mni_movimento": 459
+      },
+      {
+        "cod_mni_movimento": 460
+      },
+      {
+        "cod_mni_movimento": 461
+      },
+      {
+        "cod_mni_movimento": 462
+      },
+      {
+        "cod_mni_movimento": 463
+      },
+      {
+        "cod_mni_movimento": 464
+      },
+      {
+        "cod_mni_movimento": 465
+      },
+      {
+        "cod_mni_movimento": 472
+      },
+      {
+        "cod_mni_movimento": 473
+      },
+      {
+        "cod_mni_movimento": 11374
+      },
+      {
+        "cod_mni_movimento": 11375
+      },
+      {
+        "cod_mni_movimento": 11376
+      },
+      {
+        "cod_mni_movimento": 11377
+      },
+      {
+        "cod_mni_movimento": 11378
+      },
+      {
+        "cod_mni_movimento": 11379
+      },
+      {
+        "cod_mni_movimento": 11380
+      },
+      {
+        "cod_mni_movimento": 11381
+      },
+      {
+        "cod_mni_movimento": 12256
+      },
+      {
+        "cod_mni_movimento": 12298
+      },
+      {
+        "cod_mni_movimento": 12325
+      },
+      {
+        "cod_mni_movimento": 12617
+      },
+      {
+        "cod_mni_movimento": 12710
+      },
+      {
+        "cod_mni_movimento": 12711
+      },
+      {
+        "cod_mni_movimento": 12712
+      },
+      {
+        "cod_mni_movimento": 12713
+      },
+      {
+        "cod_mni_movimento": 12714
+      },
+      {
+        "cod_mni_movimento": 12715
+      },
+      {
+        "cod_mni_movimento": 12716
+      },
+      {
+        "cod_mni_movimento": 12717
+      },
+      {
+        "cod_mni_movimento": 12718
+      },
+      {
+        "cod_mni_movimento": 12719
+      },
+      {
+        "cod_mni_movimento": 12720
+      },
+      {
+        "cod_mni_movimento": 12721
+      },
+      {
+        "cod_mni_movimento": 12722
+      },
+      {
+        "cod_mni_movimento": 12723
+      },
+      {
+        "cod_mni_movimento": 12724
+      },
+      {
+        "cod_mni_movimento": 235
+      },
+      {
+        "cod_mni_movimento": 218
+      },
+      {
+        "cod_mni_movimento": 228
+      },
+      {
+        "cod_mni_movimento": 456
+      },
+      {
+        "cod_mni_movimento": 12184
+      },
+      {
+        "cod_mni_movimento": 12709
+      },
+      {
+        "cod_mni_movimento": 14218
+      },
+      {
+        "cod_mni_movimento": 14848
+      },
+      {
+        "cod_mni_movimento": 15245
+      },
+      {
+        "cod_mni_movimento": 15249
+      },
+      {
+        "cod_mni_movimento": 15250
+      },
+      {
+        "cod_mni_movimento": 15251
+      },
+      {
+        "cod_mni_movimento": 15253
+      },
+      {
+        "cod_mni_movimento": 15254
+      },
+      {
+        "cod_mni_movimento": 15255
+      },
+      {
+        "cod_mni_movimento": 15256
+      },
+      {
+        "cod_mni_movimento": 15257
+      },
+      {
+        "cod_mni_movimento": 15258
+      },
+      {
+        "cod_mni_movimento": 15259
+      },
+      {
+        "cod_mni_movimento": 15260
+      },
+      {
+        "cod_mni_movimento": 15261
+      },
+      {
+        "cod_mni_movimento": 15262
+      },
+      {
+        "cod_mni_movimento": 15263
+      },
+      {
+        "cod_mni_movimento": 15264
+      },
+      {
+        "cod_mni_movimento": 15265
+      },
+      {
+        "cod_mni_movimento": 15266
+      }
+    ]
+  },
+  {
+    "situacao": 29,
+    "explanation": "Julgamento homologatório proferido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 466
+      },
+      {
+        "cod_mni_movimento": 884
+      },
+      {
+        "cod_mni_movimento": 12738
+      },
+      {
+        "cod_mni_movimento": 14099
+      },
+      {
+        "cod_mni_movimento": 11411
+      },
+      {
+        "cod_mni_movimento": 12616
+      },
+      {
+        "cod_mni_movimento": 12735
+      },
+      {
+        "cod_mni_movimento": 12028
+      }
+    ]
+  },
+  {
+    "situacao": 30,
+    "explanation": "Justiça gratuita concedida por decisão",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 787
+      },
+      {
+        "cod_mni_movimento": 11024
+      },
+      {
+        "cod_mni_movimento": 15103
+      }
+    ]
+  },
+  {
+    "situacao": 31,
+    "explanation": "Justiça gratuita não concedida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 334
+      }
+    ]
+  },
+  {
+    "situacao": 32,
+    "explanation": "Justiça gratuita revogada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 349
+      }
+    ]
+  },
+  {
+    "situacao": 138,
+    "explanation": "Levantada suspensão/sobrestamento por Ação Coletiva",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15414
+      }
+    ]
+  },
+  {
+    "situacao": 97,
+    "explanation": "Levantada suspensão/sobrestamento por Ação de Controle Concentrado de Constitucionalidade",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14982
+      }
+    ]
+  },
+  {
+    "situacao": 98,
+    "explanation": "Levantada suspensão/sobrestamento por Controvérsia",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14981
+      }
+    ]
+  },
+  {
+    "situacao": 20,
+    "explanation": "Levantada suspensão/sobrestamento por cumprimento",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12066
+      },
+      {
+        "cod_mni_movimento": 14974
+      }
+    ]
+  },
+  {
+    "situacao": 106,
+    "explanation": "Levantada suspensão/sobrestamento por decisão judicial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12067
+      }
+    ]
+  },
+  {
+    "situacao": 107,
+    "explanation": "Levantada suspensão/sobrestamento por despacho judicial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12068
+      }
+    ]
+  },
+  {
+    "situacao": 99,
+    "explanation": "Levantada suspensão/sobrestamento por Grupo de Representativos",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14980
+      }
+    ]
+  },
+  {
+    "situacao": 100,
+    "explanation": "Levantada suspensão/sobrestamento por IAC",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14979
+      }
+    ]
+  },
+  {
+    "situacao": 105,
+    "explanation": "Levantada suspensão/sobrestamento por IRDR",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14985
+      },
+      {
+        "cod_mni_movimento": 15416
+      }
+    ]
+  },
+  {
+    "situacao": 101,
+    "explanation": "Levantada suspensão/sobrestamento por Recurso de Revista Repetitiva",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14984
+      }
+    ]
+  },
+  {
+    "situacao": 103,
+    "explanation": "Levantada suspensão/sobrestamento por Recurso Repetitivo",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14976
+      }
+    ]
+  },
+  {
+    "situacao": 102,
+    "explanation": "Levantada suspensão/sobrestamento por Repercussão Geral",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14975
+      }
+    ]
+  },
+  {
+    "situacao": 104,
+    "explanation": "Levantada suspensão/sobrestamento por SIRDR",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14977
+      },
+      {
+        "cod_mni_movimento": 14978
+      },
+      {
+        "cod_mni_movimento": 14983
+      }
+    ]
+  },
+  {
+    "situacao": 33,
+    "explanation": "Liminar deferida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 889
+      },
+      {
+        "cod_mni_movimento": 332
+      },
+      {
+        "cod_mni_movimento": 339
+      },
+      {
+        "cod_mni_movimento": 892
+      }
+    ]
+  },
+  {
+    "situacao": 89,
+    "explanation": "Liminar indeferida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 785
+      },
+      {
+        "cod_mni_movimento": 792
+      }
+    ]
+  },
+  {
+    "situacao": 137,
+    "explanation": "Liquidação/execução cancelada por nulidade",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15168
+      }
+    ]
+  },
+  {
+    "situacao": 91,
+    "explanation": "Liquidação/execução iniciada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 11384
+      },
+      {
+        "cod_mni_movimento": 11385
+      }
+    ]
+  },
+  {
+    "situacao": 34,
+    "explanation": "Medida protetiva homologada ou revogada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12476
+      },
+      {
+        "cod_mni_movimento": 12478
+      },
+      {
+        "cod_mni_movimento": 12479
+      }
+    ]
+  },
+  {
+    "situacao": 155,
+    "explanation": "Migração de Sistema",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 380
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 380
+      },
+      {
+        "cod_mni_movimento": 15417
+      },
+      {
+        "cod_mni_movimento": 15417,
+        "complemento1": 380
+      }
+    ]
+  },
+  {
+    "situacao": 143,
+    "explanation": "Pedido de uniformização de interpretação de lei não admitido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15183
+      }
+    ]
+  },
+  {
+    "situacao": 55,
+    "explanation": "Perícia agendada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14904
+      }
+    ]
+  },
+  {
+    "situacao": 56,
+    "explanation": "Perícia cancelada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14906
+      }
+    ]
+  },
+  {
+    "situacao": 57,
+    "explanation": "Perícia designada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14903
+      }
+    ]
+  },
+  {
+    "situacao": 58,
+    "explanation": "Perícia não realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14908
+      }
+    ]
+  },
+  {
+    "situacao": 59,
+    "explanation": "Perícia reagendada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14907
+      }
+    ]
+  },
+  {
+    "situacao": 60,
+    "explanation": "Perícia realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14905
+      }
+    ]
+  },
+  {
+    "situacao": 35,
+    "explanation": "Precatório/RPV expedido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12167
+      },
+      {
+        "cod_mni_movimento": 12174
+      }
+    ]
+  },
+  {
+    "situacao": 36,
+    "explanation": "Precatório/RPV pago",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12169
+      },
+      {
+        "cod_mni_movimento": 12176
+      }
+    ]
+  },
+  {
+    "situacao": 140,
+    "explanation": "Procedimento incidental ou cautelar resolvido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14702
+      }
+    ]
+  },
+  {
+    "situacao": 121,
+    "explanation": "Procedimento restaurativo (círculo de apoio a vítimas) realizado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12759,
+        "complemento1": 200
+      },
+      {
+        "cod_mni_movimento": 12759
+      }
+    ]
+  },
+  {
+    "situacao": 123,
+    "explanation": "Procedimento restaurativo (círculos baseados na comunicação não violenta) realizado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12759,
+        "complemento1": 196
+      },
+      {
+        "cod_mni_movimento": 12759
+      }
+    ]
+  },
+  {
+    "situacao": 126,
+    "explanation": "Procedimento restaurativo (círculos de construção de paz) realizado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12759,
+        "complemento1": 195
+      },
+      {
+        "cod_mni_movimento": 12759
+      }
+    ]
+  },
+  {
+    "situacao": 122,
+    "explanation": "Procedimento restaurativo (círculos de reflexão com ofensores) realizado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12759,
+        "complemento1": 199
+      },
+      {
+        "cod_mni_movimento": 12759
+      }
+    ]
+  },
+  {
+    "situacao": 124,
+    "explanation": "Procedimento restaurativo (conferências de grupos familiares) realizado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12759,
+        "complemento1": 198
+      },
+      {
+        "cod_mni_movimento": 12759
+      }
+    ]
+  },
+  {
+    "situacao": 125,
+    "explanation": "Procedimento restaurativo (mediação/conferência vítima-ofensor-comunidade) realizado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12759,
+        "complemento1": 197
+      },
+      {
+        "cod_mni_movimento": 12759
+      }
+    ]
+  },
+  {
+    "situacao": 127,
+    "explanation": "Procedimento restaurativo (outros) realizado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12759,
+        "complemento1": 201
+      },
+      {
+        "cod_mni_movimento": 12759
+      }
+    ]
+  },
+  {
+    "situacao": 72,
+    "explanation": "Pronunciado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 10953
+      }
+    ]
+  },
+  {
+    "situacao": 37,
+    "explanation": "Reativado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 849
+      }
+    ]
+  },
+  {
+    "situacao": 38,
+    "explanation": "Recebido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 132
+      },
+      {
+        "cod_mni_movimento": 981
+      }
+    ]
+  },
+  {
+    "situacao": 131,
+    "explanation": "Recebido da câmara de conciliação/mediação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12623
+      }
+    ]
+  },
+  {
+    "situacao": 120,
+    "explanation": "Recebido do CEJUSC ou do Centro de Conciliação/Mediação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12619
+      }
+    ]
+  },
+  {
+    "situacao": 119,
+    "explanation": "Recebido pelo CEJUSC ou pelo Centro de Conciliação/Mediação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12621
+      }
+    ]
+  },
+  {
+    "situacao": 61,
+    "explanation": "Recebido pelo Tribunal",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 26
+      },
+      {
+        "cod_mni_movimento": 132
+      },
+      {
+        "cod_mni_movimento": 981
+      }
+    ]
+  },
+  {
+    "situacao": 141,
+    "explanation": "Recurso interno admitido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15058
+      },
+      {
+        "cod_mni_movimento": 15057
+      }
+    ]
+  },
+  {
+    "situacao": 39,
+    "explanation": "Recurso interno iniciado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1000
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1005
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1006
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1007
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1015
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1016
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1037
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1066
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1137
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1208
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1319
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1321
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1327
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1328
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1329
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1689
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 1729
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 206
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 208
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 210
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 420
+      },
+      {
+        "cod_mni_movimento": 10966,
+        "complemento1": 421
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 114
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 211
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 41
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 50
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1000
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1005
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1006
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1007
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1015
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1016
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1037
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1066
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1137
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1208
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1319
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1321
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1327
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1328
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1329
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1689
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 1729
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 206
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 208
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 210
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 420
+      },
+      {
+        "cod_mni_movimento": 14739,
+        "complemento1": 421
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 210
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 49
+      },
+      {
+        "cod_mni_movimento": 85,
+        "complemento1": 421
+      }
+    ]
+  },
+  {
+    "situacao": 142,
+    "explanation": "Recurso interno não admitido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15060
+      },
+      {
+        "cod_mni_movimento": 15059
+      }
+    ]
+  },
+  {
+    "situacao": 40,
+    "explanation": "Redistribuído",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 36
+      }
+    ]
+  },
+  {
+    "situacao": 154,
+    "explanation": "Redistribuído para outro Tribunal",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 367
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 367
+      }
+    ]
+  },
+  {
+    "situacao": 41,
+    "explanation": "Remetido",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 194
+      },
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 90
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 194
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 90
+      }
+    ]
+  },
+  {
+    "situacao": 42,
+    "explanation": "Remetido ao distribuidor",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123
+      },
+      {
+        "cod_mni_movimento": 123
+      },
+      {
+        "cod_mni_movimento": 123
+      }
+    ]
+  },
+  {
+    "situacao": 132,
+    "explanation": "Remetido em grau de recurso",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 38
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 38
+      }
+    ]
+  },
+  {
+    "situacao": 130,
+    "explanation": "Remetido para a câmara de conciliação/mediação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12622
+      }
+    ]
+  },
+  {
+    "situacao": 118,
+    "explanation": "Remetido para o CEJUSC ou para o Centro de Conciliação/Mediação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12618
+      },
+      {
+        "cod_mni_movimento": 12614
+      }
+    ]
+  },
+  {
+    "situacao": 134,
+    "explanation": "Remetido para outra instância",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 267
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 267
+      }
+    ]
+  },
+  {
+    "situacao": 153,
+    "explanation": "Remetido pelo CEJUSC ou do Centro de Conciliação/Mediação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 123,
+        "complemento1": 190
+      },
+      {
+        "cod_mni_movimento": 982,
+        "complemento1": 190
+      }
+    ]
+  },
+  {
+    "situacao": 158,
+    "explanation": "Retificação de Movimentação",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 11983
+      }
+    ]
+  },
+  {
+    "situacao": 139,
+    "explanation": "Revogada transação penal",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15025
+      }
+    ]
+  },
+  {
+    "situacao": 83,
+    "explanation": "Sessão do juri antecipada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 313,
+        "complemento1": 12
+      }
+    ]
+  },
+  {
+    "situacao": 84,
+    "explanation": "Sessão do juri cancelada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 313,
+        "complemento1": 11
+      }
+    ]
+  },
+  {
+    "situacao": 85,
+    "explanation": "Sessão do juri convertida em diligência",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 313,
+        "complemento1": 15
+      }
+    ]
+  },
+  {
+    "situacao": 43,
+    "explanation": "Sessão do juri designada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 313,
+        "complemento1": 9
+      }
+    ]
+  },
+  {
+    "situacao": 86,
+    "explanation": "Sessão do juri não realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 313,
+        "complemento1": 14
+      }
+    ]
+  },
+  {
+    "situacao": 44,
+    "explanation": "Sessão do juri realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 313,
+        "complemento1": 13
+      }
+    ]
+  },
+  {
+    "situacao": 87,
+    "explanation": "Sessão do juri redesignada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 313,
+        "complemento1": 10
+      }
+    ]
+  },
+  {
+    "situacao": 146,
+    "explanation": "Sessão Restaurativa antecipada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15102,
+        "complemento1": 12
+      }
+    ]
+  },
+  {
+    "situacao": 147,
+    "explanation": "Sessão Restaurativa cancelada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15102,
+        "complemento1": 11
+      }
+    ]
+  },
+  {
+    "situacao": 148,
+    "explanation": "Sessão Restaurativa convertida em diligência",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15102,
+        "complemento1": 15
+      }
+    ]
+  },
+  {
+    "situacao": 149,
+    "explanation": "Sessão Restaurativa designada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15102,
+        "complemento1": 9
+      }
+    ]
+  },
+  {
+    "situacao": 150,
+    "explanation": "Sessão Restaurativa não realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15102,
+        "complemento1": 14
+      }
+    ]
+  },
+  {
+    "situacao": 151,
+    "explanation": "Sessão Restaurativa realizada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15102,
+        "complemento1": 13
+      }
+    ]
+  },
+  {
+    "situacao": 152,
+    "explanation": "Sessão Restaurativa redesignada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15102,
+        "complemento1": 10
+      }
+    ]
+  },
+  {
+    "situacao": 128,
+    "explanation": "Supenso/Sobrestado por SIRDR",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12099
+      },
+      {
+        "cod_mni_movimento": 12100
+      },
+      {
+        "cod_mni_movimento": 14972
+      }
+    ]
+  },
+  {
+    "situacao": 135,
+    "explanation": "Suspenso/sobrestado por Ação Coletiva",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15413
+      }
+    ]
+  },
+  {
+    "situacao": 92,
+    "explanation": "Suspenso/sobrestado  por Ação de Controle Concentrado de Constitucionalidade",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14971
+      }
+    ]
+  },
+  {
+    "situacao": 93,
+    "explanation": "Suspenso/sobrestado  por Controvérsia",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14970
+      }
+    ]
+  },
+  {
+    "situacao": 46,
+    "explanation": "Suspenso/sobrestado por decisão judicial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 898
+      },
+      {
+        "cod_mni_movimento": 263
+      },
+      {
+        "cod_mni_movimento": 25
+      },
+      {
+        "cod_mni_movimento": 264
+      },
+      {
+        "cod_mni_movimento": 268
+      },
+      {
+        "cod_mni_movimento": 270
+      },
+      {
+        "cod_mni_movimento": 271
+      },
+      {
+        "cod_mni_movimento": 272
+      },
+      {
+        "cod_mni_movimento": 275
+      },
+      {
+        "cod_mni_movimento": 276
+      },
+      {
+        "cod_mni_movimento": 277
+      },
+      {
+        "cod_mni_movimento": 278
+      },
+      {
+        "cod_mni_movimento": 279
+      },
+      {
+        "cod_mni_movimento": 947
+      },
+      {
+        "cod_mni_movimento": 960
+      },
+      {
+        "cod_mni_movimento": 971
+      },
+      {
+        "cod_mni_movimento": 11792
+      },
+      {
+        "cod_mni_movimento": 12259
+      },
+      {
+        "cod_mni_movimento": 15204
+      },
+      {
+        "cod_mni_movimento": 15247
+      },
+      {
+        "cod_mni_movimento": 15248
+      },
+      {
+        "cod_mni_movimento": 15425
+      },
+      {
+        "cod_mni_movimento": 15422
+      },
+      {
+        "cod_mni_movimento": 12065
+      }
+    ]
+  },
+  {
+    "situacao": 45,
+    "explanation": "Suspenso/sobrestado por despacho judicial",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 11012
+      },
+      {
+        "cod_mni_movimento": 11013
+      },
+      {
+        "cod_mni_movimento": 11014
+      },
+      {
+        "cod_mni_movimento": 11015
+      },
+      {
+        "cod_mni_movimento": 11016
+      },
+      {
+        "cod_mni_movimento": 11017
+      },
+      {
+        "cod_mni_movimento": 11018
+      },
+      {
+        "cod_mni_movimento": 11025
+      },
+      {
+        "cod_mni_movimento": 15009
+      },
+      {
+        "cod_mni_movimento": 15238
+      }
+    ]
+  },
+  {
+    "situacao": 94,
+    "explanation": "Suspenso/sobrestado por Grupo de Representativos",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14969
+      }
+    ]
+  },
+  {
+    "situacao": 95,
+    "explanation": "Suspenso/sobrestado por IAC",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14968
+      }
+    ]
+  },
+  {
+    "situacao": 47,
+    "explanation": "Suspenso/Sobrestado por IRDR",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12098
+      },
+      {
+        "cod_mni_movimento": 15415
+      }
+    ]
+  },
+  {
+    "situacao": 144,
+    "explanation": "Suspenso/sobrestado por prejudicialidade de RE",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 15067
+      }
+    ]
+  },
+  {
+    "situacao": 96,
+    "explanation": "Suspenso/sobrestado por Recurso de Revista Repetitiva",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14973
+      }
+    ]
+  },
+  {
+    "situacao": 48,
+    "explanation": "Suspenso/sobrestado por Recurso Repetitivo",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 11975
+      }
+    ]
+  },
+  {
+    "situacao": 49,
+    "explanation": "Suspenso/sobrestado por Repercussão Geral",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 265
+      }
+    ]
+  },
+  {
+    "situacao": 129,
+    "explanation": "Transação penal cumprida",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12028
+      }
+    ]
+  },
+  {
+    "situacao": 50,
+    "explanation": "Transitado em julgado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 848
+      }
+    ]
+  },
+  {
+    "situacao": 51,
+    "explanation": "Vista solicitada",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12204
+      }
+    ]
+  },
+  {
+    "situacao": 52,
+    "explanation": "Voto vencedor publicado",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 14093
+      },
+      {
+        "cod_mni_movimento": 14094
+      }
+    ]
+  },
+  {
+    "situacao": 167,
+    "explanation": "Suspensão por Remissão",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 11395
+      },
+      {
+        "cod_mni_movimento": 11395,
+        "complemento1": 12180
+      },
+      {
+        "cod_mni_movimento": 11395,
+        "complemento1": 12181
+      },
+      {
+        "cod_mni_movimento": 11395,
+        "complemento1": 12182
+      },
+      {
+        "cod_mni_movimento": 11395,
+        "complemento1": 12183
+      },
+      {
+        "cod_mni_movimento": 12180
+      },
+      {
+        "cod_mni_movimento": 12181
+      },
+      {
+        "cod_mni_movimento": 12182
+      },
+      {
+        "cod_mni_movimento": 12183
+      }
+    ]
+  },
+  {
+    "situacao": 168,
+    "explanation": "Levantada suspensão/sobrestamento por Remissão",
+    "movimentos": [
+      {
+        "cod_mni_movimento": 12737
+      },
+      {
+        "cod_mni_movimento": 12145
+      }
+    ]
+  }
+]

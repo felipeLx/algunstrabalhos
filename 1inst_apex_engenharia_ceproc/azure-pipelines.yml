@@ -1,0 +1,27 @@
+trigger:
+  branches:
+    include:
+      - prod
+pool: 'Linux'
+variables:
+  AWS_REGION: 'sa-east-1'  
+  S3_BUCKET_NAME: 'sgdai-projetos'
+  TIME: '1instancia'
+  PROJETO: '1inst_apex_engenharia_ceproc'
+steps:
+- task: AWSCLI@1
+  displayName: 'Sync SCRIPTS_1INST_APEX_ENGENHARIA_CEPROC'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: 'scripts/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/scripts/ --delete'
+    regionName: '$(AWS_REGION)'
+- task: AWSCLI@1
+  displayName: 'Sync CONSULTAS_1INST_APEX_ENGENHARIA_CEPROC'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: 'consultas/ s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/consultas/ --delete'
+    regionName: '$(AWS_REGION)'

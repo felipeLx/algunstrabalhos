@@ -1,0 +1,256 @@
+{
+  "common": {
+    "partition_count": 400,
+    "year": 2026
+  },
+  "metas": {
+    "meta_01_eproc": {
+      "system": "eproc",
+      "meta_key": "meta_01",
+      "meta_number": "01",
+      "loading_mode": "eligible_processes",
+      "script": "meta_01_eproc.py",
+      "paths": {
+        "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+        "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+        "eligible_processes_path": "parquet_files/eproc/filtered_id_processo_classe_conhecimento.parquet",
+        "filter_paths": [
+          "parquet_files/eproc/filtered_id_processo_classe_conhecimento.parquet"
+        ],
+        "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_01"
+      },
+      "stocks": [],
+      "variables": ["cnm01", "primeirasentm01", "baixm01", "mpum01", "decm01", "julgadom01", "susm01", "desm01"]
+    },
+    "meta_02_ejud": {
+      "system": "ejud",
+      "meta_key": "meta_02",
+      "meta_number": "02",
+      "loading_mode": "dism_filter",
+      "script": "meta_02_ejud.py",
+      "paths": {
+        "ejud_base_path": "/opt/parquet/data/prata/ejud",
+        "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+        "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_02/current/dism02.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet"
+        ],
+        "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_02"
+      },
+      "stocks": ["dism02", "dism02_ant"],
+      "variables": ["primeirasentm02", "baixm02", "mpum02", "julgadom02", "susm02", "desm02"]
+    },
+    "meta_02_eproc": {
+      "system": "eproc",
+      "meta_key": "meta_02",
+      "meta_number": "02",
+      "loading_mode": "dism_filter",
+      "script": "meta_02_eproc.py",
+      "paths": {
+        "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+        "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+        "eligible_processes_path": "parquet_files/eproc/filtered_id_processo_classe_conhecimento.parquet",
+        "filter_paths": [
+          "parquet_files/eproc/filtered_id_processo_classe_conhecimento.parquet"
+        ],
+        "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_02"
+      },
+      "stocks": ["dism02", "dism02_ant"],
+      "variables": ["primeirasentm02", "baixm02", "mpum02", "julgadom02", "susm02", "desm02"]
+    },
+    "meta_04_ejud": {
+      "system": "ejud",
+      "meta_key": "meta_04",
+      "meta_number": "04",
+      "loading_mode": "dism_filter",
+      "script": "meta_04_ejud.py",
+      "paths": {
+        "ejud_base_path": "/opt/parquet/data/prata/ejud",
+        "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+        "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_04/current/dism04.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_improbidade.parquet",
+          "parquet_files/filtered_coddoc_adm_publica.parquet"
+        ],
+        "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_04"
+      },
+      "stocks": ["dism04", "dism04_ant"],
+      "variables": ["primeirasentm04", "baixm04", "mpum04", "julgadom04", "susm04", "desm04"]
+    },
+    "meta_04_eproc": {
+      "system": "eproc",
+      "meta_key": "meta_04",
+      "meta_number": "04",
+      "loading_mode": "dism_filter",
+      "script": "stocks/meta_stocks_eproc.py",
+      "paths": {
+        "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+        "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+        "eligible_processes_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_04/current/dism04.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_improbidade.parquet",
+          "parquet_files/filtered_coddoc_adm_publica.parquet"
+        ],
+        "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_04"
+      },
+      "stocks": ["dism04", "dism04_ant"],
+      "variables": ["primeirasentm04", "baixm04", "mpum04", "julgadom04", "susm04", "desm04"]
+    },
+    "meta_06_ejud": {
+      "system": "ejud",
+      "meta_key": "meta_06",
+      "meta_number": "06",
+      "loading_mode": "dism_filter",
+      "script": "meta_06_ejud.py",
+      "paths": {
+        "ejud_base_path": "/opt/parquet/data/prata/ejud",
+        "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+        "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_06/current/dism06.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_crime_ambiental.parquet"
+        ],
+        "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_06"
+      },
+      "stocks": ["dism06", "dism06_ant"],
+      "variables": ["primeirasentm06", "baixm06", "mpum06", "julgadom06", "susm06", "desm06"]
+    },
+    "meta_06_eproc": {
+      "system": "eproc",
+      "meta_key": "meta_06",
+      "meta_number": "06",
+      "loading_mode": "dism_filter",
+      "script": "stocks/meta_stocks_eproc.py",
+      "paths": {
+        "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+        "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+        "eligible_processes_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_06/current/dism06.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_crime_ambiental.parquet"
+        ],
+        "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_06"
+      },
+      "stocks": ["dism06", "dism06_ant"],
+      "variables": ["primeirasentm06", "baixm06", "mpum06", "julgadom06", "susm06", "desm06"]
+    },
+    "meta_08_ejud": {
+      "system": "ejud",
+      "meta_key": "meta_08",
+      "meta_number": "08",
+      "loading_mode": "dism_filter",
+      "script": "meta_08_ejud.py",
+      "paths": {
+        "ejud_base_path": "/opt/parquet/data/prata/ejud",
+        "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+        "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_08/current/dism08.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_feminicidio.parquet",
+          "parquet_files/filtered_coddoc_violencia_domestica.parquet"
+        ],
+        "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_08"
+      },
+      "stocks": ["dism08", "dism08_ant"],
+      "variables": ["primeirasentm08", "baixm08", "mpum08", "julgadom08", "susm08", "desm08"]
+    },
+    "meta_08_eproc": {
+      "system": "eproc",
+      "meta_key": "meta_08",
+      "meta_number": "08",
+      "loading_mode": "dism_filter",
+      "script": "stocks/meta_stocks_eproc.py",
+      "paths": {
+        "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+        "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+        "eligible_processes_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_08/current/dism08.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_feminicidio.parquet",
+          "parquet_files/filtered_coddoc_violencia_domestica.parquet"
+        ],
+        "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_08"
+      },
+      "stocks": ["dism08", "dism08_ant"],
+      "variables": ["primeirasentm08", "baixm08", "mpum08", "julgadom08", "susm08", "desm08"]
+    },
+    "meta_10_ejud": {
+      "system": "ejud",
+      "meta_key": "meta_10",
+      "meta_number": "10",
+      "loading_mode": "dism_filter",
+      "script": "meta_10_ejud.py",
+      "paths": {
+        "ejud_base_path": "/opt/parquet/data/prata/ejud",
+        "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+        "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_10/current/dism10.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_crianca_adolescente.parquet"
+        ],
+        "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_10"
+      },
+      "stocks": ["dism10", "dism10_ant"],
+      "variables": ["primeirasentm10", "baixm10", "mpum10", "julgadom10", "susm10", "desm10"]
+    },
+    "meta_10_eproc": {
+      "system": "eproc",
+      "meta_key": "meta_10",
+      "meta_number": "10",
+      "loading_mode": "dism_filter",
+      "script": "stocks/meta_stocks_eproc.py",
+      "paths": {
+        "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+        "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+        "eligible_processes_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_10/current/dism10.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_crianca_adolescente.parquet"
+        ],
+        "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_10"
+      },
+      "stocks": ["dism10", "dism10_ant"],
+      "variables": ["primeirasentm10", "baixm10", "mpum10", "julgadom10", "susm10", "desm10"]
+    },
+    "meta_11_ejud": {
+      "system": "ejud",
+      "meta_key": "meta_11",
+      "meta_number": "11",
+      "loading_mode": "dism_filter",
+      "script": "meta_11_ejud.py",
+      "paths": {
+        "ejud_base_path": "/opt/parquet/data/prata/ejud",
+        "situacao_base_path": "/opt/parquet/data/prata/ejud/situacao_ejud",
+        "eligible_processes_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_11/current/dism11.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_idosos.parquet"
+        ],
+        "export_base_path": "/opt/parquet/data/prata/ejud/meta_cnj2026/meta_11"
+      },
+      "stocks": ["dism11", "dism11_ant"],
+      "variables": ["primeirasentm11", "baixm11", "mpum11", "julgadom11", "susm11", "desm11"]
+    },
+    "meta_11_eproc": {
+      "system": "eproc",
+      "meta_key": "meta_11",
+      "meta_number": "11",
+      "loading_mode": "dism_filter",
+      "script": "stocks/meta_stocks_eproc.py",
+      "paths": {
+        "eproc_base_path": "/opt/parquet/data/prata/eproc2g",
+        "situacao_eproc_base_path": "/opt/parquet/data/prata/eproc/situacao_eproc",
+        "eligible_processes_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_11/current/dism11.parquet",
+        "filter_paths": [
+          "parquet_files/filtered_coddoc_classe_conhecimento.parquet",
+          "parquet_files/filtered_coddoc_idosos.parquet"
+        ],
+        "export_eproc_base_path": "/opt/parquet/data/prata/eproc2g/meta_cnj2026/meta_11"
+      },
+      "stocks": ["dism11", "dism11_ant"],
+      "variables": ["primeirasentm11", "baixm11", "mpum11", "julgadom11", "susm11", "desm11"]
+    }
+  }
+}

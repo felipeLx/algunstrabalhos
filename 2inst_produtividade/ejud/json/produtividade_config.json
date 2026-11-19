@@ -1,0 +1,81 @@
+{
+    "variaveis": {
+        "distribuicao": [26],
+        "redistribuicao": [36],
+        "decisao": [3, 20],
+        "julgado": [193, 24],
+        "acordao_phases": [20, 193],
+        "baixa": {
+            "simple_phases": [22, 870, 50011, 50014],
+            "all_phases_for_loading": [22, 870, 50011, 50014, 861, 50002, 60, 123, 50123],
+            "complex_rules": [
+                {
+                    "description": "861: Arquivamento com complemento 246: Definitivo",
+                    "codfase": 861,
+                    "codcompl1": [246]
+                },
+                {
+                    "description": "50002: Certidao com complemento 50118: Processo Findo OU 66103: Descarte",
+                    "codfase": 50002,
+                    "codcompl1": [50118, 66103]
+                },
+                {
+                    "description": "60: Expedicao de documento com complemento1 50007: Oficio E complemento2 (50119 ou 66356)",
+                    "codfase": 60,
+                    "codcompl1": [50007],
+                    "codcompl2": [50119, 66356]
+                },
+                {
+                    "description": "60: Expedicao com complemento1 66103: Descarte E complemento2 296: Transito em Julgado",
+                    "codfase": 60,
+                    "codcompl1": [66103],
+                    "codcompl2": [296]
+                },
+                {
+                    "description": "123/50123: Remessa com complemento2: Baixa definitiva/RE/RESP/RO/Embargos",
+                    "codfase": [123, 50123],
+                    "codcompl2": [50052, 50078, 50079, 50080]
+                },
+                {
+                    "description": "123/50123: Remessa com complemento2: TACi/TACr",
+                    "codfase": [123, 50123],
+                    "codcompl2": [50104, 50105, 50648, 50649]
+                },
+                {
+                    "description": "123/50123: Remessa com complemento1 50723 E codlocal 515",
+                    "codfase": [123, 50123],
+                    "codcompl1": [50723],
+                    "requires_location_check": true,
+                    "location_codes": [515]
+                },
+                {
+                    "description": "123/50123: Remessa com complemento1 (50653/50655/50656) E codlocal especificos",
+                    "codfase": [123, 50123],
+                    "codcompl1": [50653, 50655, 50656],
+                    "requires_location_check": true,
+                    "location_codes": [88, 2017, 3763]
+                },
+                {
+                    "description": "123/50123: Remessa com destino (codlocal) especifico - principais",
+                    "codfase": [123, 50123],
+                    "requires_location_check": true,
+                    "location_codes": [503, 519, 520, 521, 549, 2085, 2593, 2594,
+                                       3146, 3147, 3148, 3149, 3150, 3151,
+                                       3205, 3206, 3582, 3583, 3584, 3585,
+                                       3875, 5765, 6919]
+                },
+                {
+                    "description": "123/50123: Remessa - novos locais SS2022.0106136",
+                    "codfase": [123, 50123],
+                    "requires_location_check": true,
+                    "location_codes": [3144, 10682, 10683, 10684, 10685, 10686, 4580, 8972]
+                }
+            ]
+        },
+        "emandamento": {
+            "distribution_phases": [26, 36],
+            "active_phases": [3, 20, 24, 193]
+        },
+        "competencias_excluidas": [2, 9, 10, 11, 12, 14, 15, 19, 20, 21, 22]
+    }
+}

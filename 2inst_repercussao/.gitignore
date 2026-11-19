@@ -1,0 +1,11 @@
+*tempclaude*
+tmpclaude-*-cwd
+*.md
+.claude
+DOCS/
+logs/
+*log
+__pycache__
+*.ppk
+*.csv
+*.xlsx

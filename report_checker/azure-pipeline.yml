@@ -1,0 +1,22 @@
+trigger:
+  branches:
+    include:
+      - prod
+pool: 'Linux'
+variables:
+  AWS_REGION: 'sa-east-1'
+  S3_BUCKET_NAME: 'sgdai-projetos'
+  TIME: '2instancia'
+  PROJETO: 'report_checker'
+steps:
+- task: AWSCLI@1
+  displayName: 'Sync report_checker scripts'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      report_checker/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/
+      --delete --exclude "*" --include "*.py" --include "*.yaml"
+    regionName: '$(AWS_REGION)'

@@ -1,0 +1,8 @@
+logs/
+*.log*
+*.txt
+*pycache*
+.claude/*
+build_workshop.js
+workshop_situacao_ejud.pptx
+/scripts/run_historical_ejud_situacao.sh

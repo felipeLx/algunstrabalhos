@@ -1,0 +1,53 @@
+{
+  "system_paths": {    
+    "data_paths": {
+      "ejud_base_path": "data/prata/ejud",
+      "eproc_base_path": "data/prata/eproc2g", 
+      "eproc_bronze_path": "data/bronze/eproc2g",
+      "situacao_base_path": "data/prata/ejud/situacao_ejud",
+      "situacao_eproc_base_path": "data/prata/eproc2g/situacao_eproc",
+      "export_base_path": "data/prata",
+      "filtered_coddoc_path": "data/prata/filtered_coddoc_classe_conhecimento.parquet"
+    },    "export_paths": {
+      "meta_01": "data/prata/eproc2g/meta_cnj2026/meta_01",
+      "meta_02": "data/prata/ejud/meta_cnj2026/meta_02",
+      "meta_04": "data/prata/ejud/meta_cnj2026/meta_04",
+      "meta_06": "data/prata/ejud/meta_cnj2026/meta_06",
+      "meta_07": "data/prata/ejud/meta_cnj2026/meta_07",
+      "meta_08": "data/prata/ejud/meta_cnj2026/meta_08",
+      "meta_10": "data/prata/ejud/meta_cnj2026/meta_10",
+      "meta_11": "data/prata/ejud/meta_cnj2026/meta_11"
+    },
+    "recovery_paths": {
+      "enable_recovery": true,
+      "recovery_suffix": "_recovery"
+    }
+  },
+  "available_situacoes": {
+    "ejud": [2,4,159,1,73,70,74,5,75,6,76,164,161,165,162,77,71,78,7,79,8,80,163,110,10,109,13,157,11,81,160,156,133,108,90,136,12,69,67,66,68,166,14,15,16,17,18,9,19,82,21,145,3,64,22,53,23,24,63,115,26,65,117,113,114,116,111,54,112,62,27,28,29,30,31,32,138,97,98,20,106,107,99,100,105,101,103,102,104,33,89,137,91,34,155,143,88,55,56,57,58,59,60,35,36,140,72,37,38,131,120,119,61,141,39,142,40,154,41,42,132,130,118,134,153,158,139,83,84,85,43,86,44,87,146,147,148,149,150,151,152,128,135,92,93,46,45,94,95,47,144,96,48,49,25,129,50,51,52
+],
+    "eproc": [2, 9, 10, 23, 24, 25, 27, 28, 41, 61, 62, 81, 88, 90, 129, 134, 154, 18, 29],
+    "description": "Only situacoes that have actual parquet files on the server"
+  },
+  "processing_config": {
+    "spark_optimization": {
+      "large_dataset_threshold": 500000,
+      "partition_count": 400,
+      "cache_large_datasets": true,
+      "use_broadcast_join_threshold": 50000,
+      "arrow_optimization": true,
+      "arrow_batch_size": 10000
+    },
+    "memory_management": {
+      "cleanup_intermediate": true,
+      "unpersist_unused": true,
+      "checkpoint_frequency": 10
+    },
+    "logging": {
+      "log_level": "INFO",
+      "spark_log_level": "ERROR",
+      "performance_metrics": true,
+      "session_tracking": true
+    }
+  }
+}

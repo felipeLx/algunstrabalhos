@@ -1,0 +1,193 @@
+# EJUD Meta Configurations
+# Each meta has its own section with specific settings
+
+system: ejud
+bronze_base: /opt/parquet/data/bronze/ejud
+prata_base: /opt/parquet/data/prata/ejud
+
+# Common settings for all metas
+common:
+  year: 2026
+  period_start: "2026-01-01"
+  period_end: "2026-12-31"
+  cutoff_date: "2026-01-01"
+  cutoff_15year: "2011-01-01"
+
+metas:
+  # Meta 01 - Special: uses eligible_processes mode (no dism pre-filter)
+  meta_01:
+    meta_number: "01"
+    loading_mode: eligible_processes
+    description: "Processos de conhecimento - ano corrente"
+    eligible_processes:
+      type: intersection
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+    variables:
+      - cnm01
+      - baixm01
+      - primeirasentm01
+      - mpum01
+      - decm01
+      - julgadom01
+      - susm01
+      - desm01
+    historical_check: true  # Check that events didn't happen before current year
+
+  # Meta 02 - Standard: uses dism_filter mode
+  meta_02:
+    meta_number: "02"
+    loading_mode: dism_filter
+    description: "Processos de conhecimento - acervo"
+    eligible_processes:
+      type: single
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+    stocks:
+      - dism02
+      - dism02_ant
+    variables:
+      - primeirasentm02
+      - baixm02
+      - mpum02
+      - julgadom02
+      - susm02
+      - desm02
+    historical_check: false
+
+  # Meta 04 - Improbidade/Crimes Adm Publica
+  meta_04:
+    meta_number: "04"
+    loading_mode: dism_filter
+    description: "Improbidade Administrativa e Crimes contra Adm Publica"
+    eligible_processes:
+      type: intersection
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+      assunto_union:
+        - parquet_files/filtered_coddoc_improbidade.parquet
+        - parquet_files/filtered_coddoc_adm_publica.parquet
+    case_types:
+      improbidade: parquet_files/filtered_coddoc_improbidade.parquet
+      adm_publica: parquet_files/filtered_coddoc_adm_publica.parquet
+    stocks:
+      - dism04
+    variables:
+      - primeirasentm04
+      - baixm04
+      - mpum04
+      - julgadom04
+      - susm04
+      - desm04
+    historical_check: false
+
+  # Meta 06 - Crimes Ambientais
+  meta_06:
+    meta_number: "06"
+    loading_mode: dism_filter
+    description: "Crimes Ambientais"
+    eligible_processes:
+      type: intersection
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+        - parquet_files/filtered_coddoc_crime_ambiental.parquet
+    stocks:
+      - dism06
+    variables:
+      - primeirasentm06
+      - baixm06
+      - mpum06
+      - julgadom06
+      - susm06
+      - desm06
+    historical_check: false
+
+  # Meta 07 - Indigenas e Quilombolas
+  meta_07:
+    meta_number: "07"
+    loading_mode: dism_filter
+    description: "Processos envolvendo Indigenas e Quilombolas"
+    eligible_processes:
+      type: intersection
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+        - parquet_files/filtered_coddoc_indigena_quilombola.parquet
+    stocks:
+      - dism07
+    variables:
+      - primeirasentm07
+      - baixm07
+      - mpum07
+      - julgadom07
+      - susm07
+      - desm07
+    historical_check: false
+
+  # Meta 08 - Violencia Domestica / Feminicidio
+  meta_08:
+    meta_number: "08"
+    loading_mode: dism_filter
+    description: "Violencia Domestica e Feminicidio"
+    eligible_processes:
+      type: intersection
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+      assunto_union:
+        - parquet_files/filtered_coddoc_violencia_domestica.parquet
+        - parquet_files/filtered_coddoc_feminicidio.parquet
+    case_types:
+      violencia_domestica: parquet_files/filtered_coddoc_violencia_domestica.parquet
+      feminicidio: parquet_files/filtered_coddoc_feminicidio.parquet
+    priority_case_type: feminicidio  # Feminicidio has priority over violencia_domestica
+    stocks:
+      - dism08
+    variables:
+      - primeirasentm08
+      - baixm08
+      - mpum08
+      - julgadom08
+      - susm08
+      - desm08
+    historical_check: false
+
+  # Meta 10 - Crianca e Adolescente
+  meta_10:
+    meta_number: "10"
+    loading_mode: dism_filter
+    description: "Crianca e Adolescente"
+    eligible_processes:
+      type: intersection
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+        - parquet_files/filtered_coddoc_crianca_adolescente.parquet
+    stocks:
+      - dism10
+    variables:
+      - primeirasentm10
+      - baixm10
+      - mpum10
+      - julgadom10
+      - susm10
+      - desm10
+    historical_check: false
+
+  # Meta 11 - Idosos
+  meta_11:
+    meta_number: "11"
+    loading_mode: dism_filter
+    description: "Idosos"
+    eligible_processes:
+      type: intersection
+      filters:
+        - parquet_files/filtered_coddoc_classe_conhecimento.parquet
+        - parquet_files/filtered_coddoc_idosos.parquet
+    stocks:
+      - dism11
+    variables:
+      - primeirasentm11
+      - baixm11
+      - mpum11
+      - julgadom11
+      - susm11
+      - desm11
+    historical_check: false

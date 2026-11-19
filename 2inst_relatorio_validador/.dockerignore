@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+.env
+.env.*
+.git/
+.gitignore
+aws/
+*.zip
+*.deb
+REFACTOR_PLAN.md
+README.md
+cloudflared-linux-amd64.deb
+awscliv2.zip

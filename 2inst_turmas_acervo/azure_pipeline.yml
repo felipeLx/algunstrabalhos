@@ -1,0 +1,47 @@
+trigger:
+  branches:
+    include:
+      - prod
+pool: 'Linux'
+variables:
+  AWS_REGION: 'sa-east-1'
+  S3_BUCKET_NAME: 'sgdai-projetos'
+  TIME: '2instancia'
+  PROJETO: '2inst_turmas_acervo'
+steps:
+- task: AWSCLI@1
+  displayName: 'Sync EJUD scripts'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/scripts/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/scripts/
+      --delete --exclude "*" --include "*.py"
+    regionName: '$(AWS_REGION)'
+
+
+- task: AWSCLI@1
+  displayName: 'Sync EJUD consultas'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'sync'
+    awsArguments: >-
+      ejud/consultas/
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/ejud/consultas/
+      --delete --exclude "*" --include "*.sql"
+    regionName: '$(AWS_REGION)'
+
+
+- task: AWSCLI@1
+  displayName: 'Upload orchestrator run_all_turmas_acervo_emr.py'
+  inputs:
+    awsCredentials: 'AWS-Service-Connection'
+    awsCommand: 's3'
+    awsSubCommand: 'cp'
+    awsArguments: >-
+      run_all_turmas_acervo_emr.py
+      s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/run_all_turmas_acervo_emr.py
+    regionName: '$(AWS_REGION)'

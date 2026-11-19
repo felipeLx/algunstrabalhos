@@ -1,0 +1,565 @@
+{
+  "dimensoes": [
+    {
+      "nome": "dim_fasecnj",
+      "sql": "query/query_dim_fasecnj.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "integracaofasecompl_ejud_cnj", "view":"integracaofasecompl_ejud_cnj"}
+      ],
+      "pk": ["EJUD", "CNJ"],
+      "casts": {
+        "EJUD": "long",
+        "CNJ": "long"
+      },
+      "ordenacao_pk": [],
+      "camada": "ouro",
+      "destino": { "schema": "dim2inst", "tabela": "dim_fasecnj" }
+    },
+    {
+      "nome": "dim_tipo_repercussao_ejud",
+      "sql": "query/query_dim_tipo_repercussao_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tiporepercussao", "view":"ejud_tiporepercussao"}
+      ],
+      "pk": ["COD_TIPO_REPERCUSSAO", "SISTEMA"],
+      "casts": {
+        "COD_TIPO_PARTE_SIGILOSA": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_repercussao_ejud" }
+    },
+    {
+      "nome": "dim_tipo_repercussao_eproc",
+      "sql": "query/query_dim_tipo_repercussao_eproc.sql",
+      "fontes": [
+      	{"schema": "eproc2g", "tabela": "tipo_processo_paradigma", "view":"eproc_tipo_processo_paradigma"}
+      ],
+      "pk": ["COD_TIPO_REPERCUSSAO", "SISTEMA"],
+      "defaults": { "SISTEMA": "EPROC2G" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_repercussao_eproc" }
+    },
+    {
+      "nome": "dim_tipo_parte_sigilosa_ejud",
+      "sql": "query/query_dim_tipo_parte_sigilosa_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tipopartesigilosa", "view":"ejud_tipopartesigilosa"}
+      ],
+      "pk": ["COD_TIPO_PARTE_SIGILOSA", "SISTEMA"],
+      "casts": {
+        "COD_TIPO_PARTE_SIGILOSA": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_parte_sigilosa_ejud" }
+    },
+    {
+      "nome": "dim_tipo_polo_ejud",
+      "sql": "query/query_dim_tipo_polo_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tipopolo", "view":"ejud_tipopolo"}
+      ],
+      "pk": ["COD_TIPO_POLO", "SISTEMA"],
+      "casts": {
+        "COD_TIPO_POLO": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_polo_ejud" }
+    },
+    {
+      "nome": "dim_tipo_parte_ejud",
+      "sql": "query/query_dim_tipo_parte_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tipoparte", "view":"ejud_tipoparte"}
+      ],
+      "pk": ["COD_TIPO_PARTE", "SISTEMA"],
+      "casts": {
+        "COD_TIPO_PARTE": "long",
+        "COD_TIPO_POLO": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_parte_ejud" }
+    },
+    {
+      "nome": "dim_tipo_caracteristica_ejud",
+      "sql": "query/query_dim_tipo_caracteristica_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tipocaracteristica", "view":"ejud_tipocaracteristica"}
+      ],
+      "pk": ["COD_TIPO_CARACTERISTICA", "SISTEMA"],
+      "casts": {
+        "COD_TIPO_CARACTERISTICA": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_caracteristica_ejud" }
+    },
+    {
+      "nome": "dim_situacao_repercussao_ejud",
+      "sql": "query/query_dim_situacao_repercussao_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "situacaorepercussao", "view":"ejud_situacaorepercussao"}
+      ],
+      "pk": ["COD_SITUACAO_REPERCUSSAO", "SISTEMA"],
+      "casts": {
+        "COD_SITUACAO_REPERCUSSAO": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_situacao_repercussao_ejud" }
+    },
+    {
+      "nome": "dim_natureza",
+      "sql": "query/query_dim_natureza.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "natureza", "view":"ejud_natureza"}
+      ],
+      "pk": ["COD_NATUREZA"],
+      "casts": {
+        "COD_NATUREZA": "long"
+      },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_natureza" }
+    },
+    {
+      "nome": "dim_tipo_evento_magistrado_ejud",
+      "sql": "query/query_dim_tipo_evento_magistrado_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tipoeventomagistrado", "view":"ejud_tipoeventomagistrado"}
+      ],
+      "pk": ["COD_TIPO_EVENTO_MAG", "SISTEMA"],
+      "casts": {
+        "COD_TIPO_EVENTO_MAG": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_evento_magistrado_ejud" }
+    },
+    {
+      "nome": "dim_competencia_ejud",
+      "sql": "query/query_dim_competencia_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "competencia", "view":"ejud_competencia"}
+      ],
+      "pk": ["COD_COMPETENCIA", "SISTEMA"],
+      "casts": {
+        "COD_COMPETENCIA": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_competencia_ejud" }
+    },
+    {
+      "nome": "dim_classificacao_repercussao_ejud",
+      "sql": "query/query_dim_classificacao_repercussao_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "classificacaorepercussao", "view":"ejud_classificacaorepercussao"}
+      ],
+      "pk": ["COD_CLASS_REPERCUSSAO", "SISTEMA"],
+      "casts": {
+        "COD_CLASS_REPERCUSSAO": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_classificacao_repercussao_ejud" }
+    },
+    {
+      "nome": "dim_cargo_ejud",
+      "sql": "query/query_dim_cargo_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "cargo", "view":"ejud_cargo"}
+      ],
+      "pk": ["COD_CARGO", "SISTEMA"],
+      "casts": {
+        "COD_CARGO": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_cargo_ejud" }
+    },
+    {
+      "nome": "dim_assunto_ejud",
+      "sql": "query/query_dim_assunto_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "assunto", "view":"ejud_assunto"}
+      ],
+      "pk": ["COD_ASSUNTO", "SISTEMA"],
+      "casts": {
+        "COD_ASSUNTO": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_assunto_ejud" }
+    },
+    {
+      "nome": "dim_parte_sigilosa_ejud",
+      "sql": "query/query_dim_parte_sigilosa_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tipopartesigilosa", "view":"ejud_tipopartesigilosa"}
+      ],
+      "pk": ["COD_PARTE_SIGILOSA", "SISTEMA"],
+      "casts": {
+        "COD_PARTE_SIGILOSA": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_parte_sigilosa_ejud" }
+    },
+    {
+      "nome": "dim_vara_ejud",
+      "sql": "query/query_dim_vara_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "vara", "view":"ejud_vara"},
+      	{"schema": "ejud", "tabela": "pessoa", "view":"ejud_pessoa"}
+      ],
+      "pk": ["COD_VARA", "SISTEMA"],
+      "casts": {
+        "COD_VARA": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_vara_ejud" }
+    },
+    {
+      "nome": "dim_tribunal_ejud",
+      "sql": "query/query_dim_tribunal_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tribunal", "view":"ejud_tribunal"},
+      	{"schema": "ejud", "tabela": "pessoa", "view":"ejud_pessoa"}
+      ],
+      "pk": ["COD_TRIBUNAL", "SISTEMA"],
+      "casts": {
+        "COD_TRIBUNAL": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tribunal_ejud" }
+    },
+    {
+      "nome": "dim_complemento_ejud",
+      "sql": "query/query_dim_complemento_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "complemento", "view":"ejud_complemento"}
+      ],
+      "pk": ["CODCOMPL", "SISTEMA"],
+      "casts": {
+        "CODCOMPL": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_complemento_ejud" }
+    },
+    {
+      "nome": "dim_fase_ejud",
+      "sql": "query/query_dim_fase_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "fase", "view":"ejud_fase"}
+      ],
+      "pk": ["CODFASE", "SISTEMA"],
+      "casts": {
+        "CODFASE": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_fase_ejud" }
+    },
+    {
+      "nome": "dim_classe_ejud",
+      "sql": "query/query_dim_classe_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "tipoprocesso"}
+      ],
+      "pk": ["CODCLASSE", "SISTEMA"],
+      "renomeios": { "INDSISTEMA": "SISTEMA" },
+      "casts": {
+        "CODCLASSE": "long",
+        "CODCLASSECNJ": "long",
+        "CODNAT": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_classe_ejud" }
+    },
+    {
+      "nome": "dim_localfisico_ejud",
+      "sql": "query/query_dim_localfisico_ejud.sql",
+      "pk": ["COD_LOCAL"],
+      "fontes": [
+      	{"schema": "ejud", "tabela": "magistrado"},
+	{"schema": "ejud", "tabela": "localfisico"},
+	{"schema": "ejud", "tabela": "orgaojulgador"}
+      ],
+      "renomeios": { "CODLOCAL": "COD_LOCAL" },
+      "casts": { "COD_LOCAL": "long" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_localfisico_ejud" }
+    },
+    {
+      "nome": "dim_localvirtual_ejud",
+      "sql": "query/query_dim_localvirtual_ejud.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "localvirtual"}
+      ],
+      "pk": ["COD_LOCALVIRTUAL", "SISTEMA"],
+      "casts": { "COD_LOCALVIRTUAL": "long" },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_localvirtual_ejud" }
+    },
+    {
+      "nome": "dim_processo_ejud",
+      "sql": "query/query_dim_processo_ejud.sql",
+      "fontes": [
+    	{"schema": "ejud", "tabela": "t_processo", "view":"processo"}
+      ],	
+      "pk": ["CODDOC", "SISTEMA"],
+      "casts": {
+        "CODDOC": "long",
+        "IDPROCCORP": "long",
+        "CODLOCALINI": "long",
+        "CODLOCREGI": "long",
+        "CODMAGDECRECOR": "long",
+        "CODMAGJUIZPROL": "long",
+        "CODMAT": "long",
+        "CODRAMODIR": "long",
+        "CODREGI": "long",
+        "CODTIPLEGIS": "long",
+        "CODTIPPEDREC": "long"
+      },
+      "defaults": { "SISTEMA": "EJUD" },
+      "ordenacao_pk": ["DTAUTUA:desc_nulls_last"],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_processo_ejud" }
+    },
+    {
+      "nome": "dim_tempo",
+      "sql": "query/query_dim_tempo.sql",
+      "fontes": [
+      	{"schema": "ejud", "tabela": "feriado"}
+      ],
+      "pk": ["DT_BASE"],
+      "casts": {
+        "ANO": "int",
+        "MES": "int",
+        "DIA": "int",
+        "TRIMESTRE": "int",
+        "SEMESTRE": "int",
+        "DIA_UTIL": "int"
+      },
+      "defaults": {},
+      "ordenacao_pk": [],
+      "camada": "ouro",
+      "destino": { "schema": "dim2inst", "tabela": "dim_tempo" }
+    },
+        {
+      "nome": "dim_magistrado_ejud",
+      "sql": "query/query_dim_magistrado_ejud.sql",
+      "fontes": [
+        {"schema": "ejud", "tabela": "magistrado"},
+        {"schema": "ejud", "tabela": "magistradogtda"},
+        {"schema": "ejud", "tabela": "logpessoa"},
+        {"schema": "ejud", "tabela": "configusuario"},
+        {"schema": "ejud", "tabela": "pessoa"},
+        {"schema": "ejud", "tabela": "localfisico"},
+        {"schema": "ejud", "tabela": "orgaojulgador"},
+        {"schema": "scol", "tabela": "orgao"},
+        {"schema": "rh", "tabela": "funcionario"},
+        {"schema": "dw2inst", "tabela": "magistrados_cpf_sanitizado"},
+        {"schema": "seg", "tabela": "usuario"}
+      ],
+      "pk": ["CODMAG"],
+      "renomeios": {
+        "COD_MAG": "CODMAG"
+      },
+      "casts": {
+        "CODMAG": "long",
+        "CODJUSTORIG": "long",
+        "CODCARGO": "int",
+        "CODLOCAL": "long",
+        "COD_ORG_CNJ": "long",
+        "CODMAGCNJ": "long",
+	      "NUMANTIG": "long"
+      },
+      "ordenacao_pk": ["NUMANTIG:desc"],
+      "camada": "prata",
+      "timestamps_local": ["DATA_DE_INATIVIDADE", "DTASSUN"],
+      "timestamps_assume_utc": ["DATA_DE_INATIVIDADE", "DTASSUN"],
+      "destino": { "schema": "dim2inst", "tabela": "dim_magistrado_ejud" }
+    },
+    {
+      "nome": "dim_magistrado_eproc",
+      "sql": "query/query_dim_magistrado_eproc.sql",
+      "fontes": [
+        {"schema": "seg", "tabela": "usuario"},
+        {"schema": "eproc2g", "tabela": "magistrado"},
+        {"schema": "eproc2g", "tabela": "juizo_magistrado"},
+        {"schema": "eproc2g", "tabela": "orgao"},
+        {"schema": "eproc2g", "tabela": "pessoa_identificacao"}
+      ],
+      "pk": ["COD_MAGISTRADO"],
+      "casts": {
+        "COD_MAGISTRADO": "int",
+        "NUM_ANTIGUIDADE": "int",
+        "ID_PESSOA": "string",
+        "CODCARGO": "int",
+        "CODJUSTORIG": "int"
+      },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "destino": { "schema": "dim2inst", "tabela": "dim_magistrado_eproc" }
+    },
+    {
+      "nome": "dim_tipo_repercussao",
+      "sql": "query/query_dim_tipo_repercussao.sql",
+      "fontes": [
+        {"schema": "prata/dim2inst", "tabela": "dim_tipo_repercussao_ejud", "view": "ejud_src"},
+        {"schema": "prata/dim2inst", "tabela": "dim_tipo_repercussao_eproc", "view": "eproc_src"}
+      ],
+      "pk": ["cod_unificado", "sistema", "cod_original"],
+      "casts": {
+        "cod_unificado": "int",
+        "cod_original": "int"
+      },
+      "defaults": {},
+      "ordenacao_pk": ["cod_unificado", "sistema"],
+      "camada": "ouro",
+      "dependencia": ["dim_tipo_repercussao_ejud", "dim_tipo_repercussao_eproc"],
+      "destino": { "schema": "dim2inst", "tabela": "dim_tipo_repercussao" }
+    },
+    {
+  	"nome": "dim_orgaojulgador_eproc",
+  	"sql": "query/query_dim_orgaojulgador_eproc.sql",
+  	"fontes": [
+    	{
+      		"schema": "eproc2g", "tabela": "orgao", "view": "eproc2g_orgao"
+    	}
+  	],
+  	"pk": ["COD_ORGAO"],
+  	"casts": { "COD_ORGAO": "long" },
+  	"defaults": {},
+  	"ordenacao_pk": ["COD_ORGAO"],
+  	"camada": "prata",
+  	"destino": { "schema": "dim2inst", "tabela": "dim_orgaojulgador_eproc" }
+    },
+    {
+    "nome": "dim_orgaojulgador_ejud",
+    "sql": "query/query_dim_orgaojulgador_ejud.sql",
+    "fontes": [
+      { "schema": "ejud", "tabela": "orgaojulgador", "view": "ejud_orgaojulgador" },
+      { "schema": "ejud", "tabela": "pessoa", "view": "ejud_pessoa" },
+      { "schema": "ejud", "tabela": "orgaojulgadorconfig", "view": "ejud_orgaojulgadorconfig" },
+      { "schema": "ejud", "tabela": "competencia", "view": "ejud_competencia" },
+      { "schema": "ejud", "tabela": "camaracivelespecializada", "view": "ejud_camaracivelespecializada" },
+      { "schema": "ejud", "tabela": "localfisico", "view": "ejud_localfisico" },
+      { "schema": "ejud", "tabela": "pessoaendereco", "view": "ejud_pessoaendereco" },
+      { "schema": "ejud", "tabela": "pessoaenderecocontato", "view": "ejud_pessoaenderecocontato" },
+      { "schema": "ejud", "tabela": "logpessoa", "view": "ejud_logpessoa" }
+    ],
+    "pk": ["CODORGJULG"],
+    "casts": {
+          "CODORGJULG": "long",
+          "CODORGJULGCNJ": "int",
+          "DE_PARA": "long",
+          "NOME": "string",    
+    "DESCRSINT": "string",    
+          "NOMEBNMP": "string",     
+    "CODLOCAL": "long",
+          "LOCALFISICO": "long",
+          "CODCOMPT": "long",
+          "COMPETENCIA": "string",
+          "CODMAG_PRES": "long",
+          "IDUSUSECR": "string",
+          "CODMAGPRESEXERC": "long",
+    "LINKBALCAOVIRTUAL": "string",
+    "LOGRADOURO": "string",
+          "TELEFONE": "string",
+          "EMAIL": "string",
+          "DT_INSTALACAO_EJUD": "timestamp",
+          "CODGRAUJURIS": "long",
+          "ORDEM": "long"
+    },
+    "defaults": {},
+    "ordenacao_pk": ["CODORGJULG"],
+    "camada": "prata",
+    "destino": { "schema": "dim2inst", "tabela": "dim_orgaojulgador_ejud" },
+    "timestamps_local": ["DT_INSTALACAO_EJUD"],
+    "timestamps_assume_utc": ["DT_INSTALACAO_EJUD"]
+    },
+     {
+      "nome": "dim_orgaojulgador",
+      "sql": "query/query_dim_orgaojulgador.sql",
+      "fontes": [
+        {"schema": "prata/dim2inst", "tabela": "dim_orgaojulgador_ejud", "view": "dim_orgaojulgador_ejud"},
+        {"schema": "prata/dim2inst", "tabela": "dim_orgaojulgador_eproc", "view": "dim_orgaojulgador_eproc"}
+      ],
+      "pk": ["codorgjulg_ejud", "cod_orgao"],
+      "casts": {
+        "CODORGJULG_EJUD": "long",
+        "COD_ORGAO": "long",
+        "DEPARA": "long",
+        "CODORGJULG_CNJ": "int",
+        "CODCOMPT": "long",
+        "COD_GRAU_JURISDICAO": "long",
+        "CODLOCAL": "long",
+        "CODMAG_PRES": "long",
+	      "CODMAG_PRESEXERC": "long"
+      },
+      "defaults": {},
+      "ordenacao_pk": ["codorgjulg_ejud", "cod_orgao"],
+      "camada": "ouro",
+      "dependencia": ["dim_orgaojulgador_ejud", "dim_orgaojulgador_eproc"],
+      "destino": { "schema": "dim2inst", "tabela": "dim_orgaojulgador" },
+	    "timestamps_local": ["DT_REGISTRO", "DT_INSTALACAO", "DT_DESATIVACAO"],
+      "timestamps_assume_utc": ["DT_REGISTRO", "DT_INSTALACAO", "DT_DESATIVACAO"]
+     },
+    {
+      "nome": "rel_assoc_mag_meta",
+      "sql": "query/query_rel_assoc_mag_meta.sql",
+      "fontes": [
+        {"schema": "eproc2g", "tabela": "magistrado",                   "view": "eproc2g_magistrado"},
+        {"schema": "eproc2g", "tabela": "juizo_magistrado",             "view": "eproc2g_juizo_magistrado"},
+        {"schema": "eproc2g", "tabela": "orgao",                        "view": "eproc2g_orgao"},
+        {"schema": "eproc2g", "tabela": "situacao_magistrado_juizo",    "view": "eproc2g_situacao_magistrado_juizo"},
+        {"schema": "eproc2g", "tabela": "pessoa_identificacao",         "view": "eproc2g_pessoa_identificacao"},
+        {"schema": "ejud",    "tabela": "logmagistrado",                "view": "ejud_logmagistrado"},
+        {"schema": "ejud",    "tabela": "magistrado",                   "view": "ejud_magistrado"},
+        {"schema": "ejud",    "tabela": "pessoa",                       "view": "ejud_pessoa"},
+        {"schema": "ouro/dim_2inst_ouro", "tabela": "tb_dim_magistrado_ejud", "view": "dim_magistrado_ejud"}
+      ],
+      "pk": ["COD_MAGISTRADO", "COD_CARGO", "SISTEMA"],
+      "casts": {
+        "COD_MAGISTRADO": "int",
+        "COD_CARGO": "int"
+      },
+      "ordenacao_pk": [],
+      "camada": "prata",
+      "dependencia": ["dim_magistrado_ejud"],
+      "destino": { "schema": "dw_2inst_prata", "tabela": "tb_rel_assoc_mag_meta" }
+    }
+  ]
+}
+
