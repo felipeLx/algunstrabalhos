@@ -1,0 +1,4 @@
+# Built by build_zip.py in CI
+scripts/eproc_metacnj.zip
+__pycache__/
+.pytest_cache/

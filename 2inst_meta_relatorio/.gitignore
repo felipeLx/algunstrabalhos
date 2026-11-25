@@ -1,4 +1,5 @@
 *md
+!docs/*.md
 *.log
 *.config
 __pycache__/

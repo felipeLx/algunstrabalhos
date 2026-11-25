@@ -242,6 +242,7 @@ def run(
         (9,
          "eproc2g Meta 01  │ cnm01 / julgadom01 / susm01 / desm01  (cod_sistema=2)",
          SPARK_BASE + [
+             "--py-files", f"{S3_EPROC}/eproc_metacnj.zip",
              f"{S3_EPROC}/eproc_metacnj_m01_emr.py",
              "--year",         str(year),
              "--period-start", period_start,

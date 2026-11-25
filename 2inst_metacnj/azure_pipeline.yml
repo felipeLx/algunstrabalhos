@@ -35,6 +35,10 @@ steps:
     regionName: '$(AWS_REGION)'
 
 
+- script: python3 eproc2g/build_zip.py
+  displayName: 'Build EPROC2G package zip (eproc_metacnj.zip for --py-files)'
+
+
 - task: AWSCLI@1
   displayName: 'Sync EPROC2G scripts'
   inputs:
@@ -44,7 +48,7 @@ steps:
     awsArguments: >-
       eproc2g/scripts/
       s3://$(S3_BUCKET_NAME)/$(TIME)/$(PROJETO)/eproc2g/scripts/
-      --delete --exclude "*" --include "*.py"
+      --delete --exclude "*" --include "*.py" --include "*.zip"
     regionName: '$(AWS_REGION)'
 
 
